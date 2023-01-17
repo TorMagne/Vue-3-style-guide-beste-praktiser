@@ -14,9 +14,9 @@ Brukernavn for komponenter skal alltid være flerordige, med unntak av rot-App-k
 <!-- i i-DOM-maler -->
 <item></item>
 
-Bra
+### Bra
 
-<!-- i forhåndskompilerte maler -->
+```html<!-- i forhåndskompilerte maler -->
 <TodoItem />
 
 <!-- i i-DOM-maler -->
