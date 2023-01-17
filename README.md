@@ -35,7 +35,7 @@ Navn på komponenter skal alltid være flerordige, med unntak av rot-App-kompone
 
 ### ✅ Bra
 
-```html
+```vue
 <TodoItem />
 ```
 ---
@@ -45,13 +45,13 @@ Navn på komponenter skal alltid være flerordige, med unntak av rot-App-kompone
 I kode som er commited bør prop-definisjoner alltid være så detaljerte som mulig, med å angi minst type(r).
 
 ### ❌ Dårlig
-```vue
+```js
 // Dette er bare OK når man prototyper
 const props = defineProps(['status'])
 ```
 
 ### ✅ Bra
-```vue
+```js
 const props = defineProps({
   status: String,
   required: true
