@@ -4,7 +4,7 @@
 
 ## Table of Contents
 
-   - [Komponentnavn skal alltid være flerordige](#Komponentnavn skal alltid være flerordige)
+   - (#Komponentnavn skal alltid være flerordige)
    - [Bruk detaljerte prop-definisjoner](#Bruk detaljerte prop-definisjoner)
    - [Bruk nøkkel med v-for](#Bruk nøkkel med v-for)
    - [Unngå v-if med v-for](#Unngå v-if med v-for)
