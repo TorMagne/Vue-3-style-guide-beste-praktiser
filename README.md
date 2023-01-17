@@ -19,3 +19,21 @@ Brukernavn for komponenter skal alltid være flerordige, med unntak av rot-App-k
 <!-- Bra-->
 <TodoItem />
 ```
+
+#Bruk detaljerte prop-definisjoner
+
+I kode som er commited bør prop-definisjoner alltid være så detaljerte som mulig, med å angi minst type(r).
+
+### ❌ Dårlig
+```js
+// Dette er bare OK når man prototyping
+const props = defineProps(['status'])
+```
+
+✅ Bra
+```
+const props = defineProps({
+  status: String,
+  required: true
+})
+```
