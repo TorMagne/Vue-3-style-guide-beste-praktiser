@@ -292,6 +292,7 @@ export const useTaskStore = defineStore('taskStore', {
 ### Navngivning på Pinia store filer
   
 Filnavnene til Pinia store skal være PascalCase.
+  
 PascalCase fungerer best med autocompletion i kodeeditorer, siden det er konsistent med hvordan vi refererer til komponenter i JS (X) og template.
   
 ### ❌ Dårlig
