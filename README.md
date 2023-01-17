@@ -8,6 +8,7 @@ Table of Contents:
   - [Unngå v-if med v-for](#Unngå-v-if-med-v-for)
   - [Komponentfilnavn for enkel-filkomponenter](#Komponentfilnavn-for-enkel-filkomponenter)
   - [Tett sammenkoblede komponentnavn](#Tett-sammenkoblede-komponentnavn)
+  - [Navn på fullordskomponenter](#Navn-på-fullordskomponenter)
 
 ---
 
@@ -172,5 +173,26 @@ components/
 components/
 |- SearchSidebar.vue
 |- SearchSidebarNavigation.vue
+```
+---
+
+### Navn på fullordskomponenter
+
+Komponentnavn skal ha hele ord fremfor forkortelser.
+
+Autofullføringen i editoren gjør kostnadene ved å skrive lengre navn svært lave, mens klarheten de gir er uvurderlig. Spesielt uvanlige forkortelser bør alltid unngås.
+
+### ❌ Dårlig
+```
+components/
+|- SdSettings.vue
+|- UProfOpts.vue
+```
+
+### ✅ Bra
+```
+components/
+|- StudentDashboardSettings.vue
+|- UserProfileOptions.vue
 ```
 ---
