@@ -10,6 +10,7 @@ Table of Contents:
   - [Tett sammenkoblede komponentnavn](#Tett-sammenkoblede-komponentnavn)
   - [Navn på fullordskomponenter](#Navn-på-fullordskomponenter)
   - [Prop navn casing](#Prop-navn-casing)
+  - [Enkeltfilkomponent på toppnivå elementrekkefølge](#Enkeltfilkomponent-på-toppnivå-elementrekkefølge)
 
 ---
 
@@ -207,28 +208,49 @@ Vi følger ganske enkelt konvensjonene for hvert språk. Innen JavaScript er cam
 ### ❌ Dårlig
 ```js
 <!-- Javascript -->
-
 props: {
   'greeting-text': String
 }
 ```
 ```html
 <!-- template / HTML -->
-
 <WelcomeMessage greetingText="hi"/>
 ```
 
 ### ✅ Bra
 ```js
 <!-- Javascript -->
-
 props: {
   greetingText: String
 }
 ```
 ```html
 <!-- template / HTML -->
-
 <WelcomeMessage greeting-text="hi"/>
+```
+---
+
+### Enkeltfilkomponent på toppnivå elementrekkefølge
+
+Enkeltfilkomponenter bør alltid være i denne rekkefølgen <template>-, <script>- og <style>-tagger konsekvent, med <style> sist, fordi minst en av de to andre alltid er nødvendig.
+  
+
+### ❌ Dårlig
+```html
+ <!-- ComponentA.vue -->
+<style>/* ... */</style>
+<script>/* ... */</script>
+<template>...</template>
+
+<script>/* ... */</script>
+<template>...</template>
+<style>/* ... */</style>
+  ```
+  
+### ✅ Bra
+```html
+<template>...</template>
+<script>/* ... */</script>
+<style>/* ... */</style>
 ```
 ---
