@@ -64,7 +64,7 @@ const props = defineProps({
 Nøkkel med v-for er alltid nødvendig på komponenter for å opprettholde intern komponenttilstand nedover undertrær. Selv for elementer er det en god praksis å opprettholde forutsigbart oppførsel.
 
 ### ❌ Dårlig
-```html
+```vue
 <ul>
   <li v-for="todo in todos">
     {{ todo.text }}
