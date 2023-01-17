@@ -31,7 +31,7 @@ const props = defineProps(['status'])
 ```
 
 ### ✅ Bra
-```
+```js
 const props = defineProps({
   status: String,
   required: true
