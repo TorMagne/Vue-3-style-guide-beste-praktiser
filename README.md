@@ -13,6 +13,7 @@ Table of Contents:
   - [Enkeltfilkomponent på toppnivå elementrekkefølge](#Enkeltfilkomponent-på-toppnivå-elementrekkefølge)
 - [Beste praksiser for Pinia](#Beste-praksiser-for-Pinia)
   - [Definer en Pinia store](#Definer-en-Pinia-store)
+  - [Navngivning på Pinia store filer](#Navngivning-på-Pinia-store-filer)
 
 ---
 
@@ -259,7 +260,7 @@ Enkeltfilkomponenter bør alltid være i denne rekkefølgen <template>-, <script
   
 ### Definer en Pinia store
 - Du kan navngi returverdien til `defineStore()` alt du vil,
-- men det er best å bruke navnet på store og omgi den med `use`
+- men det er best å bruke navnet på Pinia store og omgi den med `use`
 - og `Store` (f.eks. `useUserStore`, `useCartStore`, `useProductStore`)
 - det første argumentet er en unik ID for store på tvers av applikasjonen din
   
@@ -287,3 +288,20 @@ export const useTaskStore = defineStore('taskStore', {
 });
 ```
 ---
+  
+### Navngivning på Pinia store filer
+  
+### ❌ Dårlig
+```
+store/
+|- myuserstore.vue
+
+store/
+|- myUserStore.vue
+```
+  
+### ✅ Bra
+```
+store/
+|- MyUserStore.vue
+```
