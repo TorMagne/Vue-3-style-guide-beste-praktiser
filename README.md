@@ -336,7 +336,7 @@ store/
 ```
   
 ### Pinia store importering eksempel
-```html
+```vue
 <script setup>
 import { useTaskStore } from '../stores/TaskStore';
   
