@@ -336,12 +336,12 @@ store/
 ```
   
 ### Pinia store importering eksempel
-```js
-<!-- <script setup> -->
+```
+<script setup>
 import { useTaskStore } from '../stores/TaskStore';
   
 const taskStore = useTaskStore();
-<!-- <script> -->
+<script>
 ```
 ---
   
