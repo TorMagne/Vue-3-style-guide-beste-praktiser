@@ -45,13 +45,13 @@ Navn på komponenter skal alltid være flerordige, med unntak av rot-App-kompone
 I kode som er commited bør prop-definisjoner alltid være så detaljerte som mulig, med å angi minst type(r).
 
 ### ❌ Dårlig
-```js
-// Dette er bare OK når man prototyping
+```vue
+// Dette er bare OK når man prototyper
 const props = defineProps(['status'])
 ```
 
 ### ✅ Bra
-```js
+```vue
 const props = defineProps({
   status: String,
   required: true
@@ -73,7 +73,7 @@ Nøkkel med v-for er alltid nødvendig på komponenter for å opprettholde inter
 ```
 
 ### ✅ Bra
-```html
+```vue
 <ul>
   <li
     v-for="todo in todos"
@@ -95,7 +95,7 @@ Det er to vanlige tilfeller hvor dette kan være fristende:
 - For å unngå å rendre en liste hvis den skal skjules (f.eks. v-for = "user in unsers" v-if = "shouldShowUsers"). I disse tilfellene flytter du v-if til et container-element (f.eks. ul, ol).
 
 ### ❌ Dårlig
-```html
+```vue
 <ul>
   <li
     v-for="user in users"
@@ -109,7 +109,7 @@ Det er to vanlige tilfeller hvor dette kan være fristende:
 ---
 
 ### ✅ Bra
-```html
+```vue
 <ul>
   <li
     v-for="user in activeUsers"
@@ -234,25 +234,25 @@ Propnavn skal alltid bruke camelCase under deklarering, men kebab-case i templat
 Vi følger ganske enkelt konvensjonene for hvert språk. Innen JavaScript er camelCase mer naturlig. Innen HTML er kebab-case.
 
 ### ❌ Dårlig
-```js
+```vue
 <!-- Javascript -->
 props: {
   'greeting-text': String
 }
 ```
-```html
+```vue
 <!-- template / HTML -->
 <WelcomeMessage greetingText="hi"/>
 ```
 
 ### ✅ Bra
-```js
+```vue
 <!-- Javascript -->
 props: {
   greetingText: String
 }
 ```
-```html
+```vue
 <!-- template / HTML -->
 <WelcomeMessage greeting-text="hi"/>
 ```
@@ -263,7 +263,7 @@ props: {
 Enkeltfilkomponenter bør alltid være i denne rekkefølgen <template>-, <script>- og <style>-tagger konsekvent, med <style> sist, fordi minst en av de to andre alltid er nødvendig.
   
 ### ❌ Dårlig
-```html
+```vue
 <style>/* ... */</style>
 <script>/* ... */</script>
 <template>...</template>
@@ -274,7 +274,7 @@ Enkeltfilkomponenter bør alltid være i denne rekkefølgen <template>-, <script
   ```
   
 ### ✅ Bra
-```html
+```vue
 <template>...</template>
 <script>/* ... */</script>
 <style>/* ... */</style>
