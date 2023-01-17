@@ -206,27 +206,28 @@ Vi følger ganske enkelt konvensjonene for hvert språk. Innen JavaScript er cam
 
 ### ❌ Dårlig
 ```js
-javascript
+<!-- Javascript -->
 
 props: {
   'greeting-text': String
 }
 ```
 ```
-template / HTML
+<!-- template / HTML -->
 
 <WelcomeMessage greetingText="hi"/>
 ```
 
 ### ✅ Bra
 ```js
-javascript
+<!-- Javascript -->
+
 props: {
   greetingText: String
 }
 ```
 ```
-template / HTML
+<!-- template / HTML -->
 
 <WelcomeMessage greeting-text="hi"/>
 ```
