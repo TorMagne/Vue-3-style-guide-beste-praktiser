@@ -196,3 +196,37 @@ components/
 |- UserProfileOptions.vue
 ```
 ---
+
+### Prop navn casing
+
+Propnavn skal alltid bruke camelCase under deklarering, men kebab-case i templates og JSX.
+
+Vi følger ganske enkelt konvensjonene for hvert språk. Innen JavaScript er camelCase mer naturlig. Innen HTML er kebab-case.
+
+### ❌ Dårlig
+```js
+js
+
+props: {
+  'greeting-text': String
+}
+```
+```
+template
+
+<WelcomeMessage greetingText="hi"/>
+```
+
+### ✅ Bra
+```js
+js
+props: {
+  greetingText: String
+}
+```
+```
+template
+
+<WelcomeMessage greeting-text="hi"/>
+```
+---
