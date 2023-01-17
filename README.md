@@ -29,7 +29,7 @@ Navn på komponenter skal alltid være flerordige, med unntak av rot-App-kompone
 
 ### ❌ Dårlig 
 
-```html
+```vue
 <Item />
 ```
 
