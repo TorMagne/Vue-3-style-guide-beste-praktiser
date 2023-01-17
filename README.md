@@ -1,6 +1,4 @@
-# StyleGuide
-
-# Beste praksis for Vue.js
+# StyleGuide og beste praksis for Vue.js
 
 ## Komponentnavn skal alltid være flerordige
 
