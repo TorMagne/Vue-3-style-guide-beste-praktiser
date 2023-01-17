@@ -28,15 +28,13 @@ Navn på komponenter skal alltid være flerordige, med unntak av rot-App-kompone
 
 ### ❌ Dårlig 
 
-```
-<!-- Dårlig -->
+```html
 <Item />
 ```
 
 ### ✅ Bra
 
-```
-<!-- Bra-->
+```html
 <TodoItem />
 ```
 ---
