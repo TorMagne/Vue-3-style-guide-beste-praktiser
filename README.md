@@ -38,7 +38,7 @@ const props = defineProps({
 })
 ```
 
-# Bruk nøkkel med v-for
+## Bruk nøkkel med v-for
 
 Nøkkel med v-for er alltid nødvendig på komponenter for å opprettholde intern komponenttilstand nedover undertrær. Selv for elementer er det en god praksis å opprettholde forutsigbart oppførsel.
 
@@ -63,7 +63,7 @@ Nøkkel med v-for er alltid nødvendig på komponenter for å opprettholde inter
 </ul>
 ```
 
-# Unngå v-if med v-for
+## Unngå v-if med v-for
 
 Bruk aldri v-if på samme element som v-for.
 
@@ -105,3 +105,22 @@ Det er to vanlige tilfeller hvor dette kan være fristende:
 </ul>
 ```
 
+## Komponentfilnavn for enkel-filkomponenter
+
+Filnavnene til Single-File Components skal være PascalCase.
+
+PascalCase fungerer best med autocompletion i kodeeditorer, siden det er konsistent med hvordan vi refererer til komponenter i JS (X) og maler, så langt det er mulig.
+
+### ❌ Dårlig
+```html
+components/
+|- mycomponent.vue
+
+components/
+|- myComponent.vue
+```
+### ✅ Bra
+```html
+components/
+|- MyComponent.vue
+```
