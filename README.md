@@ -10,6 +10,8 @@
 - [Unngå v-if med v-for](#Unngå-v-if-med-v-for)
 - [Komponentfilnavn for enkel-filkomponenter](#Komponentfilnavn-for-enkel-filkomponenter)
 
+---
+
 #### Komponentnavn skal alltid være flerordige
 
 Brukernavn for komponenter skal alltid være flerordige, med unntak av rot-App-komponenter. Dette hindrer konflikter med eksisterende og fremtidige HTML-elementer, siden alle HTML-elementer er et enkelt ord.
