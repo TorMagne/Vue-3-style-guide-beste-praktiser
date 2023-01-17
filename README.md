@@ -237,7 +237,6 @@ Enkeltfilkomponenter bør alltid være i denne rekkefølgen <template>-, <script
 
 ### ❌ Dårlig
 ```html
- <!-- ComponentA.vue -->
 <style>/* ... */</style>
 <script>/* ... */</script>
 <template>...</template>
