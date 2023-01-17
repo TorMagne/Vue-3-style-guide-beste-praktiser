@@ -336,7 +336,7 @@ store/
 ```
   
 ### Pinia store importering eksempel
-```
+```html
 <script setup>
 import { useTaskStore } from '../stores/TaskStore';
   
