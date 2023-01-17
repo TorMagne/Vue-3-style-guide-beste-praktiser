@@ -337,15 +337,11 @@ store/
   
 ### Pinia store importering eksempel
 ```js
-<script setup>
-```js
-// importing the store
+<!-- <script setup> -->
 import { useTaskStore } from '../stores/TaskStore';
   
-// setting the store
 const taskStore = useTaskStore();
-<script>
-```
+<!-- <script> -->
 ```
 ---
   
