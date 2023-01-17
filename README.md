@@ -9,6 +9,7 @@ Table of Contents:
 - [Bruk nøkkel med v-for](#Bruk-nøkkel-med-v-for)
 - [Unngå v-if med v-for](#Unngå-v-if-med-v-for)
 - [Komponentfilnavn for enkel-filkomponenter](#Komponentfilnavn-for-enkel-filkomponenter)
+- [Tett sammenkoblede komponentnavn](#Tett-sammenkoblede-komponentnavn)
 
 ---
 
