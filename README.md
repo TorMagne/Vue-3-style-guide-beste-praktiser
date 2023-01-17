@@ -30,7 +30,7 @@ I kode som er commited bør prop-definisjoner alltid være så detaljerte som mu
 const props = defineProps(['status'])
 ```
 
-✅ Bra
+### ✅ Bra
 ```
 const props = defineProps({
   status: String,
