@@ -273,7 +273,7 @@ export const taskStore = defineStore('useTaskStore', {
 
 import { defineStore } from 'pinia';
 
-export const Store = defineStore('TaskStore', {
+export const taskStore = defineStore('TaskStore', {
   state: () => ({}),
 });
 ```
