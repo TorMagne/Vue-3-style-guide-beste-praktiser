@@ -6,6 +6,7 @@ Table of Contents:
   - [Bruk detaljerte prop-definisjoner](#Bruk-detaljerte-prop-definisjoner)
   - [Bruk nøkkel med v-for](#Bruk-nøkkel-med-v-for)
   - [Unngå v-if med v-for](#Unngå-v-if-med-v-for)
+  - [Komponent navn på views](#Komponent-navn-på-views)
   - [Komponentfilnavn for enkel-filkomponenter](#Komponentfilnavn-for-enkel-filkomponenter)
   - [Tett sammenkoblede komponentnavn](#Tett-sammenkoblede-komponentnavn)
   - [Navn på fullordskomponenter](#Navn-på-fullordskomponenter)
@@ -23,7 +24,7 @@ Table of Contents:
 
 ### Komponentnavn skal alltid være flerordige
 
-Brukernavn for komponenter skal alltid være flerordige, med unntak av rot-App-komponenter. Dette hindrer konflikter med eksisterende og fremtidige HTML-elementer, siden alle HTML-elementer er et enkelt ord.
+Navn på komponenter skal alltid være flerordige, med unntak av rot-App-komponenter. Dette hindrer konflikter med eksisterende og fremtidige HTML-elementer, siden alle HTML-elementer er et enkelt ord.
 
 ### ❌ Dårlig 
 
@@ -129,9 +130,34 @@ Det er to vanlige tilfeller hvor dette kan være fristende:
 ```
 ---
 
+### Komponent navn på views
+
+Navn på views komponenter skal være PascalCase og skal ha et forklarendre navn med en (View) prefiks
+
+PascalCase fungerer best med autocompletion i kodeeditorer, siden det er konsistent med hvordan vi refererer til komponenter i JS (X) og template.
+
+
+### ❌ Dårlig
+```
+views/
+|- myview.vue
+
+views/
+|- myView.vue
+```
+### ✅ Bra
+```
+views/
+|- HomeView.vue
+
+views/
+|- LoginView.vue
+```
+---
+
 ### Komponentfilnavn for enkel-filkomponenter
 
-Filnavnene til Single-File Components skal være PascalCase.
+Filnavnene til Single-File komponenter skal være PascalCase.
 
 PascalCase fungerer best med autocompletion i kodeeditorer, siden det er konsistent med hvordan vi refererer til komponenter i JS (X) og template.
 
