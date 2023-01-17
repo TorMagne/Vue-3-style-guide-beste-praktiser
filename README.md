@@ -29,6 +29,7 @@ Brukernavn for komponenter skal alltid være flerordige, med unntak av rot-App-k
 <!-- Bra-->
 <TodoItem />
 ```
+---
 
 #### Bruk detaljerte prop-definisjoner
 
@@ -47,6 +48,7 @@ const props = defineProps({
   required: true
 })
 ```
+---
 
 #### Bruk nøkkel med v-for
 
@@ -72,6 +74,7 @@ Nøkkel med v-for er alltid nødvendig på komponenter for å opprettholde inter
   </li>
 </ul>
 ```
+---
 
 #### Unngå v-if med v-for
 
@@ -94,6 +97,7 @@ Det er to vanlige tilfeller hvor dette kan være fristende:
   </li>
 </ul>
 ```
+---
 
 ### ✅ Bra
 ```html
@@ -114,6 +118,7 @@ Det er to vanlige tilfeller hvor dette kan være fristende:
    </template>
 </ul>
 ```
+---
 
 #### Komponentfilnavn for enkel-filkomponenter
 
@@ -134,3 +139,4 @@ components/
 components/
 |- MyComponent.vue
 ```
+---
