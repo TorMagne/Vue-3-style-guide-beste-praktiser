@@ -213,7 +213,7 @@ props: {
 }
 ```
 ```
-template /( HTML
+template / HTML
 
 <WelcomeMessage greetingText="hi"/>
 ```
