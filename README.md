@@ -3,15 +3,19 @@
 ## Disse reglene hjelper til med å forhindre feil, så lær og følg dem til enhver tid. Unntak kan eksistere, men bør være svært sjeldne.
 
 Table of Contents:
-
-- [Komponentnavn skal alltid være flerordige](#Komponentnavn-skal-alltid-være-flerordige)
-- [Bruk detaljerte prop-definisjoner](#Bruk-detaljerte-prop-definisjoner)
-- [Bruk nøkkel med v-for](#Bruk-nøkkel-med-v-for)
-- [Unngå v-if med v-for](#Unngå-v-if-med-v-for)
-- [Komponentfilnavn for enkel-filkomponenter](#Komponentfilnavn-for-enkel-filkomponenter)
-- [Tett sammenkoblede komponentnavn](#Tett-sammenkoblede-komponentnavn)
+- [Beste praksis for Vue.js](#Beste-praksis-for-Vue.js)
+  - [Komponentnavn skal alltid være flerordige](#Komponentnavn-skal-alltid-være-flerordige)
+  - [Bruk detaljerte prop-definisjoner](#Bruk-detaljerte-prop-definisjoner)
+  - [Bruk nøkkel med v-for](#Bruk-nøkkel-med-v-for)
+  - [Unngå v-if med v-for](#Unngå-v-if-med-v-for)
+  - [Komponentfilnavn for enkel-filkomponenter](#Komponentfilnavn-for-enkel-filkomponenter)
+  - [Tett sammenkoblede komponentnavn](#Tett-sammenkoblede-komponentnavn)
 
 ---
+
+
+
+## Beste praksis for Vue.js
 
 ### Komponentnavn skal alltid være flerordige
 
