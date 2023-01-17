@@ -11,6 +11,7 @@ Table of Contents:
   - [Navn på fullordskomponenter](#Navn-på-fullordskomponenter)
   - [Prop navn casing](#Prop-navn-casing)
   - [Enkeltfilkomponent på toppnivå elementrekkefølge](#Enkeltfilkomponent-på-toppnivå-elementrekkefølge)
+- [Beste praksiser for Pinia](#Beste-praksiser-for-Pinia)
 
 ---
 
