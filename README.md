@@ -15,6 +15,7 @@ Table of Contents:
 - [Beste praksiser for Pinia](#Beste-praksiser-for-Pinia)
   - [Definer en Pinia store](#Definer-en-Pinia-store)
   - [Navngivning på Pinia store filer](#Navngivning-på-Pinia-store-filer)
+  - [Pinia store importering (eksempel)](#Pinia-store-importering-(eksempel))
 
 ---
 
@@ -333,3 +334,17 @@ store/
 store/
 |- MyUserStore.vue
 ```
+  
+### Pinia store importering (eksempel)
+```js
+<script setup>
+// importing the store
+import { useTaskStore } from '../stores/TaskStore';
+  
+// setting the store
+const taskStore = useTaskStore();
+<script>
+```
+---
+  
+
