@@ -212,7 +212,7 @@ props: {
   'greeting-text': String
 }
 ```
-```
+```html
 <!-- template / HTML -->
 
 <WelcomeMessage greetingText="hi"/>
@@ -226,7 +226,7 @@ props: {
   greetingText: String
 }
 ```
-```
+```html
 <!-- template / HTML -->
 
 <WelcomeMessage greeting-text="hi"/>
