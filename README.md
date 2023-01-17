@@ -20,7 +20,7 @@
 <TodoItem />
 ```
 
-##Bruk detaljerte prop-definisjoner
+## Bruk detaljerte prop-definisjoner
 
 ### I kode som er commited bør prop-definisjoner alltid være så detaljerte som mulig, med å angi minst type(r).
 
