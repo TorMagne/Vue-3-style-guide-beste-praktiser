@@ -345,5 +345,3 @@ const taskStore = useTaskStore();
 <script>
 ```
 ---
-  
-
