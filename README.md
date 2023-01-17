@@ -234,7 +234,7 @@ Propnavn skal alltid bruke camelCase under deklarering, men kebab-case i templat
 Vi følger ganske enkelt konvensjonene for hvert språk. Innen JavaScript er camelCase mer naturlig. Innen HTML er kebab-case.
 
 ### ❌ Dårlig
-```vue
+```js
 <!-- Javascript -->
 props: {
   'greeting-text': String
@@ -246,7 +246,7 @@ props: {
 ```
 
 ### ✅ Bra
-```vue
+```js
 <!-- Javascript -->
 props: {
   greetingText: String
