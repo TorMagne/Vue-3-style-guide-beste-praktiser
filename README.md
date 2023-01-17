@@ -235,7 +235,6 @@ props: {
 
 Enkeltfilkomponenter bør alltid være i denne rekkefølgen <template>-, <script>- og <style>-tagger konsekvent, med <style> sist, fordi minst en av de to andre alltid er nødvendig.
   
-
 ### ❌ Dårlig
 ```html
 <style>/* ... */</style>
@@ -254,3 +253,24 @@ Enkeltfilkomponenter bør alltid være i denne rekkefølgen <template>-, <script
 <style>/* ... */</style>
 ```
 ---
+  
+## Beste praksiser for Pinia
+- Du kan navngi returverdien til `defineStore()` alt du vil,
+- men det er best å bruke navnet på store og omgi den med `use`
+- og `Store` (f.eks. `useUserStore`, `useCartStore`, `useProductStore`)
+- det første argumentet er en unik ID for store på tvers av applikasjonen din
+  
+### ❌ Dårlig
+```js
+import { defineStore } from 'pinia';
+
+export const taskStore = defineStore('useTaskStore', {
+  state: () => ({}),
+});
+  
+import { defineStore } from 'pinia';
+
+export const Store = defineStore('TaskStore', {
+  state: () => ({}),
+});
+```
