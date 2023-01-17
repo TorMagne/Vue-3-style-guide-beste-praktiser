@@ -61,3 +61,45 @@ Nøkkel med v-for er alltid nødvendig på komponenter for å opprettholde inter
 </ul>
 ```
 
+# Unngå v-if med v-for
+
+Bruk aldri v-if på samme element som v-for.
+
+Det er to vanlige tilfeller hvor dette kan være fristende:
+
+- For å filtrere elementer i en liste (f.eks. v-for = "user in users" v-if = "user.isActive"). I disse tilfellene, erstatt users med en ny computed property som returnerer den filtrerte listen (f.eks. activeUsers).
+- For å unngå å rendre en liste hvis den skal skjules (f.eks. v-for = "user in unsers" v-if = "shouldShowUsers"). I disse tilfellene flytter du v-if til et container-element (f.eks. ul, ol).
+
+### ❌ Dårlig
+```html
+<ul>
+  <li
+    v-for="user in users"
+    v-if="user.isActive"
+    :key="user.id"
+  >
+    {{ user.name }}
+  </li>
+</ul>
+```
+
+### ✅ Bra
+```html
+<ul>
+  <li
+    v-for="user in activeUsers"
+    :key="user.id"
+  >
+    {{ user.name }}
+  </li>
+</ul>
+
+<ul>
+  <template v-for="user in users" :key="user.id">
+    <li v-if="user.isActive">
+      {{ user.name }}
+    </li>
+   </template>
+</ul>
+```
+
