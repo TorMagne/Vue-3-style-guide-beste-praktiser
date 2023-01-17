@@ -40,8 +40,7 @@ const props = defineProps({
 
 # Bruk nøkkel med v-for
 
-## Nøkkel med v-for er alltid nødvendig på komponenter for å opprettholde intern komponenttilstand nedover undertrær.
-## Selv for elementer er det en god praksis å opprettholde forutsigbart oppførsel.
+Nøkkel med v-for er alltid nødvendig på komponenter for å opprettholde intern komponenttilstand nedover undertrær. Selv for elementer er det en god praksis å opprettholde forutsigbart oppførsel.
 
 ### ❌ Dårlig
 ```html
