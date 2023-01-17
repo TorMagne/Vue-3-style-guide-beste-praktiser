@@ -291,6 +291,8 @@ export const useTaskStore = defineStore('taskStore', {
   
 ### Navngivning på Pinia store filer
   
+Filnavnene til Pinia store skal være PascalCase.
+  
 ### ❌ Dårlig
 ```
 store/
