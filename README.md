@@ -18,14 +18,14 @@ Brukernavn for komponenter skal alltid være flerordige, med unntak av rot-App-k
 
 ### ❌ Dårlig 
 
-```html
+```
 <!-- Dårlig -->
 <Item />
 ```
 
 ### ✅ Bra
 
-```html
+```
 <!-- Bra-->
 <TodoItem />
 ```
@@ -127,7 +127,7 @@ Filnavnene til Single-File Components skal være PascalCase.
 PascalCase fungerer best med autocompletion i kodeeditorer, siden det er konsistent med hvordan vi refererer til komponenter i JS (X) og maler, så langt det er mulig.
 
 ### ❌ Dårlig
-```html
+```
 components/
 |- mycomponent.vue
 
@@ -135,8 +135,39 @@ components/
 |- myComponent.vue
 ```
 ### ✅ Bra
-```html
+```
 components/
 |- MyComponent.vue
+```
+---
+
+### Tett sammenkoblede komponentnavn
+
+Child komponenter som er tett koblet til deres parent komponent, bør inkludere navnet på den overordnede komponenten som et prefiks.
+
+Hvis en komponent bare gir mening i sammenheng med en enslig parent komponent, bør forholdet være tydelig i navnet. Siden editoren vanligvis organiserer filer alfabetisk, holder dette også disse relaterte filene ved siden av hverandre.
+
+### ❌ Dårlig
+```
+components/
+|- TodoList.vue
+|- TodoItem.vue
+|- TodoButton.vue
+
+components/
+|- SearchSidebar.vue
+|- NavigationForSearchSidebar.vue
+```
+
+### ✅ Bra
+```
+components/
+|- TodoList.vue
+|- TodoListItem.vue
+|- TodoListItemButton.vue
+
+components/
+|- SearchSidebar.vue
+|- SearchSidebarNavigation.vue
 ```
 ---
