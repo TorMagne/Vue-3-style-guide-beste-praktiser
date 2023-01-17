@@ -1,8 +1,8 @@
-Alt-H1 StyleGuide og beste praksis for Vue.js
+# StyleGuide og beste praksis for Vue.js
 
 ## Disse reglene hjelper til med å forhindre feil, så lær og følg dem til enhver tid. Unntak kan eksistere, men bør være svært sjeldne.
 
-## Table of Contents
+### Table of Contents
 
 - [Komponentnavn skal alltid være flerordige](#Komponentnavn-skal-alltid-være-flerordige)
 - [Bruk detaljerte prop-definisjoner](#Bruk-detaljerte-prop-definisjoner)
