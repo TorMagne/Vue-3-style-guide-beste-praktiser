@@ -10,7 +10,7 @@
 - [Unngå v-if med v-for](#Unngå-v-if-med-v-for)
 - [Komponentfilnavn for enkel-filkomponenter](#Komponentfilnavn-for-enkel-filkomponenter)
 
-## Komponentnavn skal alltid være flerordige
+#### Komponentnavn skal alltid være flerordige
 
 Brukernavn for komponenter skal alltid være flerordige, med unntak av rot-App-komponenter. Dette hindrer konflikter med eksisterende og fremtidige HTML-elementer, siden alle HTML-elementer er et enkelt ord.
 
@@ -28,7 +28,7 @@ Brukernavn for komponenter skal alltid være flerordige, med unntak av rot-App-k
 <TodoItem />
 ```
 
-## Bruk detaljerte prop-definisjoner
+#### Bruk detaljerte prop-definisjoner
 
 I kode som er commited bør prop-definisjoner alltid være så detaljerte som mulig, med å angi minst type(r).
 
@@ -46,7 +46,7 @@ const props = defineProps({
 })
 ```
 
-## Bruk nøkkel med v-for
+#### Bruk nøkkel med v-for
 
 Nøkkel med v-for er alltid nødvendig på komponenter for å opprettholde intern komponenttilstand nedover undertrær. Selv for elementer er det en god praksis å opprettholde forutsigbart oppførsel.
 
@@ -71,7 +71,7 @@ Nøkkel med v-for er alltid nødvendig på komponenter for å opprettholde inter
 </ul>
 ```
 
-## Unngå v-if med v-for
+#### Unngå v-if med v-for
 
 Bruk aldri v-if på samme element som v-for.
 
@@ -113,7 +113,7 @@ Det er to vanlige tilfeller hvor dette kan være fristende:
 </ul>
 ```
 
-## Komponentfilnavn for enkel-filkomponenter
+#### Komponentfilnavn for enkel-filkomponenter
 
 Filnavnene til Single-File Components skal være PascalCase.
 
