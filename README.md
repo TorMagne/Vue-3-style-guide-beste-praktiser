@@ -334,6 +334,7 @@ store/
 store/
 |- MyUserStore.vue
 ```
+---
   
 ### Pinia store importering eksempel
 ```vue
