@@ -12,6 +12,7 @@ Table of Contents:
   - [Prop navn casing](#Prop-navn-casing)
   - [Enkeltfilkomponent på toppnivå elementrekkefølge](#Enkeltfilkomponent-på-toppnivå-elementrekkefølge)
 - [Beste praksiser for Pinia](#Beste-praksiser-for-Pinia)
+  - [Definer en Pinia store](#Definer-en-Pinia-store)
 
 ---
 
@@ -255,6 +256,8 @@ Enkeltfilkomponenter bør alltid være i denne rekkefølgen <template>-, <script
 ---
   
 ## Beste praksiser for Pinia
+  
+### Definer en Pinia store
 - Du kan navngi returverdien til `defineStore()` alt du vil,
 - men det er best å bruke navnet på store og omgi den med `use`
 - og `Store` (f.eks. `useUserStore`, `useCartStore`, `useProductStore`)
@@ -267,10 +270,20 @@ import { defineStore } from 'pinia';
 export const taskStore = defineStore('useTaskStore', {
   state: () => ({}),
 });
-  
+
 import { defineStore } from 'pinia';
 
 export const Store = defineStore('TaskStore', {
   state: () => ({}),
 });
 ```
+  
+### ✅ Bra
+```js
+import { defineStore } from 'pinia';
+
+export const useTaskStore = defineStore('taskStore', {
+  state: () => ({}),
+});
+```
+---
