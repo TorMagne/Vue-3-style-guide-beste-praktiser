@@ -9,6 +9,7 @@ Table of Contents:
   - [Komponentfilnavn for enkel-filkomponenter](#Komponentfilnavn-for-enkel-filkomponenter)
   - [Tett sammenkoblede komponentnavn](#Tett-sammenkoblede-komponentnavn)
   - [Navn på fullordskomponenter](#Navn-på-fullordskomponenter)
+  - [Prop navn casing](#Prop-navn-casing)
 
 ---
 
@@ -205,27 +206,27 @@ Vi følger ganske enkelt konvensjonene for hvert språk. Innen JavaScript er cam
 
 ### ❌ Dårlig
 ```js
-js
+javascript
 
 props: {
   'greeting-text': String
 }
 ```
 ```
-template
+template /( HTML
 
 <WelcomeMessage greetingText="hi"/>
 ```
 
 ### ✅ Bra
 ```js
-js
+javascript
 props: {
   greetingText: String
 }
 ```
 ```
-template
+template / HTML
 
 <WelcomeMessage greeting-text="hi"/>
 ```
