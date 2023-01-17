@@ -160,7 +160,7 @@ components/
 ```
 
 ### ✅ Bra
-```html
+```
 components/
 |- TodoList.vue
 |- TodoListItem.vue
