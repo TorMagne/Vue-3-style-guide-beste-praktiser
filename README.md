@@ -1,5 +1,3 @@
-# StyleGuide og best praksis for Vue.js
-
 ## Disse reglene hjelper til med å forhindre feil, så lær og følg dem til enhver tid. Unntak kan eksistere, men bør være svært sjeldne.
 
 Table of Contents:
