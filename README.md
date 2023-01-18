@@ -310,6 +310,8 @@ Enkeltfilkomponenter bør alltid være i denne rekkefølgen ``` <template> <scri
 - og `Store` (f.eks. `useUserStore`, `useCartStore`, `useProductStore`)
 - det første argumentet er en unik ID for store på tvers av applikasjonen din
   
+[Mer detaljer om Pinia define store](https://pinia.vuejs.org/core-concepts/)
+  
 ### ❌ Dårlig
 ```js
 import { defineStore } from 'pinia';
@@ -340,8 +342,6 @@ export const useTaskStore = defineStore('taskStore', {
 Filnavnene til Pinia store skal være PascalCase.
   
 PascalCase fungerer best med autocompletion i kodeeditorer, siden det er konsistent med hvordan vi refererer til komponenter i JS (X) og template.
-
-[Mer detaljer om Pinia define store](https://pinia.vuejs.org/core-concepts/)
   
 ### ❌ Dårlig
 ```
