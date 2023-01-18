@@ -341,7 +341,7 @@ Filnavnene til Pinia store skal være PascalCase.
   
 PascalCase fungerer best med autocompletion i kodeeditorer, siden det er konsistent med hvordan vi refererer til komponenter i JS (X) og template.
 
-[Mer detaljer om Pinia define store]([https://www.google.com](https://pinia.vuejs.org/core-concepts/))
+[Mer detaljer om Pinia define store](https://pinia.vuejs.org/core-concepts/)
   
 ### ❌ Dårlig
 ```
