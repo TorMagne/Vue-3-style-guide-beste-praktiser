@@ -56,10 +56,6 @@ Sørg også for at Prettier: Use Editor Config er på.
 
 ## HTML sematics og accessibility
 
-[Les mer om accessibility ](https://developer.mozilla.org/en-US/docs/Learn/Accessibility)
-
-[Les mer om HTML semantics ](https://developer.mozilla.org/en-US/docs/Glossary/Semantics)
-
 :bangbang: Alle skal skrive riktig HTML semantics og implementere god accessibility. Som forbedrer tilgjengeligheten, forbedrer også SEO, noe som gjør nettstedet ditt mer søkbar. :bangbang:
 - Å bygge tilgjengelige nettsteder er til fordel for alle.
 - Å bry seg om tilgjengelighet viser god etikk og moral, noe som forbedrer ditt/bedriftens offentlige bilde.
@@ -68,9 +64,13 @@ Sørg også for at Prettier: Use Editor Config er på.
 
 Mann skal for eks ikke bruke ```<div></div>``` for en navigasjon. Mann skal da istede bruke riktig HTML semantics for en navigasjon som er ```<nav></nav>```
 
-Er du i tvil om hva som er riktig semantic i forhold til hva du holder på og lage kan du se på linked nedenfor.
+Er du i tvil om hva som er riktig semantic i forhold til hva du holder på og lage kan du se på linkene nedenfor.
 
-[HTML elementer](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
+[Les mer om accessibility ](https://developer.mozilla.org/en-US/docs/Learn/Accessibility)
+
+[Les mer om HTML semantics ](https://developer.mozilla.org/en-US/docs/Glossary/Semantics)
+
+[Les mer om HTML elementer](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
 
 ### ❌ Dårlig
 ```html
@@ -119,7 +119,7 @@ aria-label-attributtet kan brukes til å definere en string som merker det inter
 
 Er du i tvil så kan du finne mer informasjon om aria-label i linken nedenfor
 
-[aria-label](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-label)
+[Les mer om aria-label](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-label)
 
 ### ✅ Eksempel
 ```html
