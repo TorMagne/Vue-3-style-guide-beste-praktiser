@@ -362,6 +362,6 @@ store/
 import { useTaskStore } from '../stores/TaskStore';
   
 const taskStore = useTaskStore();
-<script>
+</script>
 ```
 ---
