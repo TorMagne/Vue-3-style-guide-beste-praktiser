@@ -133,6 +133,7 @@ aria-label-attributtet kan brukes til å definere en string som merker det inter
   </svg>
 </button>
 ```
+---
 
 ## Best praksis for Vue 3
 
