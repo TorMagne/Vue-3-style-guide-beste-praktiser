@@ -61,7 +61,7 @@ Nøkkel med v-for er alltid nødvendig på komponenter for å opprettholde inter
 
 En v-for-loop skal bruke en unik id for en nøkkel hvis en er tilgjengelig.
 
-en v-for-loop som bruker den unike id-egenskapen til hvert element som en måte å spore unikheten til hvert av listeelementene - som vanligvis foreslått av kompilatoren, og for å øke DOM-ytelsen.
+En v-for-loop som bruker den unike id-egenskapen til hvert element som en måte å spore unikheten til hvert av listeelementene - som vanligvis foreslått av kompilatoren, og for å øke DOM-ytelsen.
 
 ### ❌ Dårlig
 ```vue
