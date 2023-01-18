@@ -55,9 +55,10 @@ PascalCase fungerer best med autocompletion i kodeeditorer, siden det er konsist
 ```
 
 ### ✅ Bra
-```
+```vue
 <TodoItem />
 ```
+---
 
 ### Bruk detaljerte prop-definisjoner
 
