@@ -43,7 +43,8 @@ Dette er den rette extension å installere.
 
 Sørg for at Prettier er valg som default formatter i VS Code setting.
 
-![Prettier setting](https://user-images.githubusercontent.com/61709493/213148470-562efe55-cba1-4a3d-bcc5-e5d7610e39a9.png)
+![Prettier setting](https://user-images.githubusercontent.com/61709493/213150743-73e72f53-0286-4ddf-a560-cf8e82486d81.png)
+
 
 Sørg også for at Prettier: Use Editor Config er på.
 
