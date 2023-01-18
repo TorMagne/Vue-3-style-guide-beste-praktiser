@@ -2,6 +2,7 @@
 
 Table of Contents:
 - [Prettier code formatering](#Prettier-code-formatering)
+- [HTML sematics](#HTML-sematics)
 - [Best praksis for Vue 3](#Best-praksis-for-Vue-3)
   - [v-for og v-if](#v-for-og-v-if)
     - [Bruk nøkkel med v-for](#Bruk-nøkkel-med-v-for)
@@ -49,6 +50,21 @@ Sørg for at Prettier er valg som default formatter i VS Code setting.
 Sørg også for at Prettier: Use Editor Config er på.
 
 ![Prettier Editor Config](https://user-images.githubusercontent.com/61709493/213149028-3a95b2ae-126b-40e8-9fb3-8683e4bb3415.png)
+
+---
+
+## HTML sematics
+
+[Les mer om accessibility ](https://developer.mozilla.org/en-US/docs/Learn/Accessibility)
+[Les mer om HTML semantics ](https://developer.mozilla.org/en-US/docs/Glossary/Semantics)
+
+- Alle skal skrive riktig HTML semantics og implementere god accessibility. Som forbedrer tilgjengeligheten, forbedrer også SEO, noe som gjør nettstedet ditt mer søkbar.
+- Å bygge tilgjengelige nettsteder er til fordel for alle.
+- Å bry seg om tilgjengelighet viser god etikk og moral, noe som forbedrer ditt/bedriftens offentlige bilde.
+- Andre gode fremgangsmåter som forbedrer tilgjengeligheten gjør også nettstedet ditt mer brukbart for andre grupper, for eksempel mobiltelefonbrukere, synshemede etc, eller de med lav nettverkshastighet. Faktisk kan alle dra nytte av mange slike forbedringer.
+- Quote fra The Web Accessibility Directive "The 15-page directive requires all public sector websites and applications in EU member states to implement, enforce, and maintain a uniform set of accessibility standards."
+
+
 
 
 ## Best praksis for Vue 3
