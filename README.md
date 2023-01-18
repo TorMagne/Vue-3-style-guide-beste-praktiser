@@ -180,7 +180,7 @@ PascalCase fungerer best med autocompletion i kodeeditorer, siden det er konsist
 ```vue
 <todo-item><todo-item/>
 
-<TodoItem><TodoItem/>
+<toDoItem><toDoItem/>
 ```
 
 ### ✅ Bra
