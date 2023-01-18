@@ -117,6 +117,9 @@ Et vanlig eksempel er en knapp som inneholder en SVG.
 
 aria-label-attributtet kan brukes til å definere en string som merker det interaktive elementet det er satt på. Dette gir elementet dets tilgjengelige navn.
 
+Er du i tvil så kan du finne mer informasjon om aria-label i linken nedenfor
+
+[aria-label](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-label)
 
 ### ✅ Eksempel
 ```html
