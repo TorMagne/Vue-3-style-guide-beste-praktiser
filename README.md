@@ -32,8 +32,8 @@ Table of Contents:
 
 :bangbang: Disse reglene for Prettier er noe alle skal bruke. :bangbang:
 
-Det kommer til og være en .prettierrc fil i alle Vue 3 prosjekter.
-Denne filen innholder regler for Prettier som alle skal følge.
+:bangbang: Det kommer til og være en .prettierrc fil i alle Vue 3 prosjekter.
+Denne filen innholder regler for Prettier som alle skal følge. :bangbang:
 
 Prettier extension skal være installert i VS Code for alle prosjekter som bruker Vue 3.
 
