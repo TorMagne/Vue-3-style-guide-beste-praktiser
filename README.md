@@ -280,7 +280,7 @@ props: {
 
 ### Enkeltfilkomponent på toppnivå elementrekkefølge
 
-Enkeltfilkomponenter bør alltid være i denne rekkefølgen <template>-, <script>- og <style>-tagger konsekvent, med <style> sist, fordi minst en av de to andre alltid er nødvendig.
+Enkeltfilkomponenter bør alltid være i denne rekkefølgen <template> , <script> og <style>-tagger konsekvent, med <style> sist, fordi minst en av de to andre alltid er nødvendig.
   
 ### ❌ Dårlig
 ```vue
