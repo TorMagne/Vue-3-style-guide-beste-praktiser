@@ -5,9 +5,10 @@ Table of Contents:
   - [Komponentnavn skal alltid være flerordige](#Komponentnavn-skal-alltid-være-flerordige)
   - [Importering av komponenter](#Importering-av-komponenter)
   - [Bruk detaljerte prop-definisjoner](#Bruk-detaljerte-prop-definisjoner)
-  - [Bruk nøkkel med v-for](#Bruk-nøkkel-med-v-for)
-  - [Bruk en unik id på nøkkel i v-for](#Bruk-en-unik-id-på-nøkkel-i-v-for)
-  - [Unngå v-if med v-for](#Unngå-v-if-med-v-for)
+  - [v-for og v-if](#v-for-og-v-if)
+    - [Bruk nøkkel med v-for](#Bruk-nøkkel-med-v-for)
+    - [Bruk en unik id på nøkkel i v-for](#Bruk-en-unik-id-på-nøkkel-i-v-for)
+    - [Unngå v-if med v-for](#Unngå-v-if-med-v-for)
   - [Komponent navn på views](#Komponent-navn-på-views)
   - [Komponentfilnavn for enkel-filkomponenter](#Komponentfilnavn-for-enkel-filkomponenter)
   - [Tett sammenkoblede komponentnavn](#Tett-sammenkoblede-komponentnavn)
@@ -80,6 +81,8 @@ const props = defineProps({
 })
 ```
 ---
+
+## v-for og v-if
 
 ### Bruk nøkkel med v-for
 
