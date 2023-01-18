@@ -42,7 +42,8 @@ Sørg for at Prettier er valg som default formatter i VS Code setting
 
 Sørg også for at Prettier: Use Editor Config er på
 
-![Prettier Editor Config](https://user-images.githubusercontent.com/61709493/213148791-52be026a-fc11-4b51-86a1-5c67d7419e25.png)
+![Prettier Editor Config](https://user-images.githubusercontent.com/61709493/213149028-3a95b2ae-126b-40e8-9fb3-8683e4bb3415.png)
+
 
 
 
