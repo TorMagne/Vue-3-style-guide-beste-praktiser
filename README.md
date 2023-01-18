@@ -73,7 +73,7 @@ Er du i tvil om hva som er riktig semantic i forhold til hva du holder på og la
 
 ### ❌ Dårlig
 ```html
-<!-- Navigation eksempel -->
+<!-- Navigasjon eksempel -->
 <div>
     <li>
       <a href="#">Home</a>
@@ -87,7 +87,7 @@ Er du i tvil om hva som er riktig semantic i forhold til hva du holder på og la
 
 ### ✅ Bra
 ```html
-<!-- Navigation eksempel -->
+<!-- Navigasjon eksempel -->
 <nav>
   <ul>
     <li>
