@@ -12,7 +12,7 @@ Table of Contents:
   - [Navn på fullordskomponenter](#Navn-på-fullordskomponenter)
   - [Prop navn casing](#Prop-navn-casing)
   - [Enkeltfilkomponent på toppnivå elementrekkefølge](#Enkeltfilkomponent-på-toppnivå-elementrekkefølge)
-- [Best praksis for Pinia](#Beste-praksis-for-Pinia)
+- [Best praksis for Pinia](#Best-praksis-for-Pinia)
   - [Definer en Pinia store](#Definer-en-Pinia-store)
   - [Navngivning på Pinia store filer](#Navngivning-på-Pinia-store-filer)
   - [Pinia store importering eksempel](#Pinia-store-importering-eksempel)
