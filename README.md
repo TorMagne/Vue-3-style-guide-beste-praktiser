@@ -151,7 +151,7 @@ Det er to vanlige tilfeller hvor dette kan være fristende:
 
 ### Komponent navn på views
 
-Navn på views komponenter skal være PascalCase og skal ha et forklarendre navn med en (View) prefiks
+Navn på views komponenter skal være PascalCase og skal ha et forklarendre navn med en (View) postfiks
 
 PascalCase fungerer best med autocompletion i kodeeditorer, siden det er konsistent med hvordan vi refererer til komponenter i JS (X) og template.
 
