@@ -12,8 +12,9 @@ Table of Contents:
   - [Komponentfilnavn for enkel-filkomponenter](#Komponentfilnavn-for-enkel-filkomponenter)
   - [Tett sammenkoblede komponentnavn](#Tett-sammenkoblede-komponentnavn)
   - [Navn på fullordskomponenter](#Navn-på-fullordskomponenter)
-  - [Bruk detaljerte prop-definisjoner](#Bruk-detaljerte-prop-definisjoner)
-  - [Prop navn casing](#Prop-navn-casing)
+  - [Props](#Props)
+    - [Bruk detaljerte prop-definisjoner](#Bruk-detaljerte-prop-definisjoner)
+    - [Prop navn casing](#Prop-navn-casing)
   - [Enkeltfilkomponent på toppnivå elementrekkefølge](#Enkeltfilkomponent-på-toppnivå-elementrekkefølge)
 - [Best praksis for Pinia](#Best-praksis-for-Pinia)
   - [Definer en Pinia store](#Definer-en-Pinia-store)
@@ -259,6 +260,7 @@ components/
 ```
 ---
 
+## Props
 
 ### Bruk detaljerte prop-definisjoner
 
