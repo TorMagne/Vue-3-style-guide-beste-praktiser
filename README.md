@@ -105,7 +105,7 @@ Er du i tvil om hva som er riktig semantic i forhold til hva du holder på og la
 
 ## aria-label
 
-:bangbang: aria-label er noe alle skal bruk hvis det mangler standard tilgjengelige navn på et element, eller ikke beskrive innholde nøyaktig, og det ikke er noe synlig innhold i DOM-en som kan assosieres med objektet for å gi det mening. :bangbang:
+:bangbang: aria-label er noe alle skal bruk hvis det mangler standard tilgjengelige navn på et element, eller innholde ikke er beskrevet nøyaktig, og det ikke er noe synlig innhold i DOM-en som kan assosieres med objektet for å gi det mening. :bangbang:
 
 - Det meste av innholdet har et tilgjengelig navn generert fra tekstinnholdet i det umiddelbare innpakningselementet. Tilgjengelige navn kan også opprettes av visse attributter eller tilknyttede elementer.
 
