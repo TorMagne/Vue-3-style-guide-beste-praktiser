@@ -6,7 +6,7 @@ Table of Contents:
     - [Bruk nøkkel med v-for](#Bruk-nøkkel-med-v-for)
     - [Bruk en unik id på nøkkel i v-for](#Bruk-en-unik-id-på-nøkkel-i-v-for)
     - [Unngå v-if med v-for](#Unngå-v-if-med-v-for)
-   - [Komponenter](#Komponenter)
+  - [Komponenter](#Komponenter)
     - [Komponentnavn skal alltid være flerordige](#Komponentnavn-skal-alltid-være-flerordige)
     - [Importering av komponenter](#Importering-av-komponenter)
     - [Komponent navn på views](#Komponent-navn-på-views)
