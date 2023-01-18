@@ -2,20 +2,21 @@
 
 Table of Contents:
 - [Best praksis for Vue 3](#Best-praksis-for-Vue-3)
-  - [Komponentnavn skal alltid være flerordige](#Komponentnavn-skal-alltid-være-flerordige)
-  - [Importering av komponenter](#Importering-av-komponenter)
   - [v-for og v-if](#v-for-og-v-if)
     - [Bruk nøkkel med v-for](#Bruk-nøkkel-med-v-for)
     - [Bruk en unik id på nøkkel i v-for](#Bruk-en-unik-id-på-nøkkel-i-v-for)
     - [Unngå v-if med v-for](#Unngå-v-if-med-v-for)
-  - [Komponent navn på views](#Komponent-navn-på-views)
-  - [Komponentfilnavn for enkel-filkomponenter](#Komponentfilnavn-for-enkel-filkomponenter)
-  - [Tett sammenkoblede komponentnavn](#Tett-sammenkoblede-komponentnavn)
-  - [Navn på fullordskomponenter](#Navn-på-fullordskomponenter)
+   - [Komponenter](#Komponenter)
+    - [Komponentnavn skal alltid være flerordige](#Komponentnavn-skal-alltid-være-flerordige)
+    - [Importering av komponenter](#Importering-av-komponenter)
+    - [Komponent navn på views](#Komponent-navn-på-views)
+    - [Komponentfilnavn for enkel-filkomponenter](#Komponentfilnavn-for-enkel-filkomponenter)
+    - [Tett sammenkoblede komponentnavn](#Tett-sammenkoblede-komponentnavn)
+    - [Navn på fullordskomponenter](#Navn-på-fullordskomponenter)
+    - [Enkeltfilkomponent på toppnivå elementrekkefølge](#Enkeltfilkomponent-på-toppnivå-elementrekkefølge)
   - [Props](#Props)
     - [Bruk detaljerte prop-definisjoner](#Bruk-detaljerte-prop-definisjoner)
     - [Prop navn casing](#Prop-navn-casing)
-  - [Enkeltfilkomponent på toppnivå elementrekkefølge](#Enkeltfilkomponent-på-toppnivå-elementrekkefølge)
 - [Best praksis for Pinia](#Best-praksis-for-Pinia)
   - [Definer en Pinia store](#Definer-en-Pinia-store)
   - [Navngivning på Pinia store filer](#Navngivning-på-Pinia-store-filer)
@@ -27,42 +28,6 @@ Table of Contents:
 
 
 ## Best praksis for Vue 3
-
-### Komponentnavn skal alltid være flerordige
-
-Navn på komponenter skal alltid være flerordige, med unntak av rot-App-komponenter. Dette hindrer konflikter med eksisterende og fremtidige HTML-elementer, siden alle HTML-elementer er et enkelt ord.
-
-### ❌ Dårlig 
-
-```vue
-<Item />
-```
-
-### ✅ Bra
-
-```vue
-<TodoItem />
-```
----
-
-### Importering av komponenter
-
-Imortering av komponenter skal vær PascalCase.
-
-PascalCase fungerer best med autocompletion i kodeeditorer, siden det er konsistent med hvordan vi refererer til komponenter i JS (X) og template.
-
-### ❌ Dårlig
-```vue
-<todo-item><todo-item/>
-
-<TodoItem><TodoItem/>
-```
-
-### ✅ Bra
-```vue
-<TodoItem />
-```
----
 
 ## v-for og v-if
 
@@ -159,6 +124,44 @@ Det er to vanlige tilfeller hvor dette kan være fristende:
     </li>
    </template>
 </ul>
+```
+---
+
+## Komponenter
+
+### Komponentnavn skal alltid være flerordige
+
+Navn på komponenter skal alltid være flerordige, med unntak av rot-App-komponenter. Dette hindrer konflikter med eksisterende og fremtidige HTML-elementer, siden alle HTML-elementer er et enkelt ord.
+
+### ❌ Dårlig 
+
+```vue
+<Item />
+```
+
+### ✅ Bra
+
+```vue
+<TodoItem />
+```
+---
+
+### Importering av komponenter
+
+Imortering av komponenter skal vær PascalCase.
+
+PascalCase fungerer best med autocompletion i kodeeditorer, siden det er konsistent med hvordan vi refererer til komponenter i JS (X) og template.
+
+### ❌ Dårlig
+```vue
+<todo-item><todo-item/>
+
+<TodoItem><TodoItem/>
+```
+
+### ✅ Bra
+```vue
+<TodoItem />
 ```
 ---
 
@@ -260,6 +263,29 @@ components/
 ```
 ---
 
+### Enkeltfilkomponent på toppnivå elementrekkefølge
+
+Enkeltfilkomponenter bør alltid være i denne rekkefølgen ``` <template> <script> <style> ``` tagger konsekvent, med <style> sist, fordi minst en av de to andre alltid er nødvendig.
+  
+### ❌ Dårlig
+```vue
+<style>/* ... */</style>
+<script>/* ... */</script>
+<template>...</template>
+
+<script>/* ... */</script>
+<template>...</template>
+<style>/* ... */</style>
+  ```
+  
+### ✅ Bra
+```vue
+<template>...</template>
+<script>/* ... */</script>
+<style>/* ... */</style>
+```
+---
+
 ## Props
 
 ### Bruk detaljerte prop-definisjoner
@@ -309,29 +335,6 @@ props: {
 ```vue
 <!-- template / HTML -->
 <WelcomeMessage greeting-text="hi"/>
-```
----
-
-### Enkeltfilkomponent på toppnivå elementrekkefølge
-
-Enkeltfilkomponenter bør alltid være i denne rekkefølgen ``` <template> <script> <style> ``` tagger konsekvent, med <style> sist, fordi minst en av de to andre alltid er nødvendig.
-  
-### ❌ Dårlig
-```vue
-<style>/* ... */</style>
-<script>/* ... */</script>
-<template>...</template>
-
-<script>/* ... */</script>
-<template>...</template>
-<style>/* ... */</style>
-  ```
-  
-### ✅ Bra
-```vue
-<template>...</template>
-<script>/* ... */</script>
-<style>/* ... */</style>
 ```
 ---
   
