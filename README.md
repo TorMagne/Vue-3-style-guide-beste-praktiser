@@ -1,6 +1,7 @@
 ## Disse reglene hjelper til med å forhindre feil, så lær og følg dem til enhver tid. Unntak kan eksistere, men bør være svært sjeldne.
 
 Table of Contents:
+- [Prettier code formatering](#Prettier-code-formatering)
 - [Best praksis for Vue 3](#Best-praksis-for-Vue-3)
   - [v-for og v-if](#v-for-og-v-if)
     - [Bruk nøkkel med v-for](#Bruk-nøkkel-med-v-for)
@@ -26,6 +27,12 @@ Table of Contents:
 ---
 
 
+
+## Prettier code formatering
+Prettier extension skal være installert i VS Code for alle prosjekter som bruker Vue 3
+
+![Prettier](Screenshot 2023-01-18 at 11.11.05![image](https://user-images.githubusercontent.com/61709493/213147155-392ad74a-c78d-4d29-a057-9fbdb6e1af51.png)
+)
 
 ## Best praksis for Vue 3
 
