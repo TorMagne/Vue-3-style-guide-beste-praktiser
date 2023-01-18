@@ -1,7 +1,7 @@
 ## Disse reglene hjelper til med å forhindre feil, så lær og følg dem til enhver tid. Unntak kan eksistere, men bør være svært sjeldne.
 
 Table of Contents:
-- [Beste praksiser for Vue 3](#Beste-praksiser-for-Vue-3)
+- [Best praksis for Vue 3](#Best-praksis-for-Vue-3)
   - [Komponentnavn skal alltid være flerordige](#Komponentnavn-skal-alltid-være-flerordige)
   - [Bruk detaljerte prop-definisjoner](#Bruk-detaljerte-prop-definisjoner)
   - [Bruk nøkkel med v-for](#Bruk-nøkkel-med-v-for)
@@ -12,7 +12,7 @@ Table of Contents:
   - [Navn på fullordskomponenter](#Navn-på-fullordskomponenter)
   - [Prop navn casing](#Prop-navn-casing)
   - [Enkeltfilkomponent på toppnivå elementrekkefølge](#Enkeltfilkomponent-på-toppnivå-elementrekkefølge)
-- [Beste praksiser for Pinia](#Beste-praksiser-for-Pinia)
+- [Best praksis for Pinia](#Beste-praksis-for-Pinia)
   - [Definer en Pinia store](#Definer-en-Pinia-store)
   - [Navngivning på Pinia store filer](#Navngivning-på-Pinia-store-filer)
   - [Pinia store importering eksempel](#Pinia-store-importering-eksempel)
@@ -21,7 +21,7 @@ Table of Contents:
 
 
 
-## Beste praksiser for Vue 3
+## BBest praksis for Vue 3
 
 ### Komponentnavn skal alltid være flerordige
 
@@ -281,7 +281,7 @@ Enkeltfilkomponenter bør alltid være i denne rekkefølgen <template>-, <script
 ```
 ---
   
-## Beste praksiser for Pinia
+## Best praksis for Pinia
   
 ### Definer en Pinia store
 - Du kan navngi returverdien til `defineStore()` alt du vil,
