@@ -65,6 +65,36 @@ Sørg også for at Prettier: Use Editor Config er på.
 - Andre gode fremgangsmåter som forbedrer tilgjengeligheten gjør også nettstedet ditt mer brukbart for andre grupper, for eksempel mobiltelefonbrukere, synshemede etc, eller de med lav nettverkshastighet. Faktisk kan alle dra nytte av mange slike forbedringer.
 - Quote fra The Web Accessibility Directive "The 15-page directive requires all public sector websites and applications in EU member states to implement, enforce, and maintain a uniform set of accessibility standards."
 
+Mann skal ikke for eks bruke ```<div></div>``` for en navigasjon. Mann skal da istede bruke riktig HTML semantics for en navigasjon som er ```<nav></nav>```
+
+### ❌ Dårlig
+```html
+<!-- Navigation eksempel -->
+<div>
+    <li>
+      <a href="#">Home</a>
+    </li>
+    <li>
+      <a href="#">Blog</a>
+    </li>
+</div>
+```
+
+
+### ✅ Bra
+```html
+<nav>
+  <ul>
+    <li><
+      a href="#">Home</a>
+    </li>
+    <li>
+      <a href="#">Blog</a>
+    </li>
+  </ul>
+</nav>
+```
+
 ---
 
 ## Best praksis for Vue 3
