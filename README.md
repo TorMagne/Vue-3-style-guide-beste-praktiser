@@ -30,7 +30,10 @@ Table of Contents:
 
 ## Prettier code formatering
 
-:bangbang: #### Disse reglene for Prettier er noe all skal bruke :bangbang:
+:bangbang: Disse reglene for Prettier er noe alle skal bruke. :bangbang:
+
+Det kommer til og være en .prettierrc fil i alle Vue 3 prosjekter.
+Denne filen innholder regler for Prettier som alle skal følge.
 
 Prettier extension skal være installert i VS Code for alle prosjekter som bruker Vue 3.
 
@@ -45,8 +48,6 @@ Sørg for at Prettier er valg som default formatter i VS Code setting.
 Sørg også for at Prettier: Use Editor Config er på.
 
 ![Prettier Editor Config](https://user-images.githubusercontent.com/61709493/213149028-3a95b2ae-126b-40e8-9fb3-8683e4bb3415.png)
-
-
 
 
 ## Best praksis for Vue 3
