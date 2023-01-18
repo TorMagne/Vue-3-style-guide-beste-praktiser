@@ -4,7 +4,6 @@ Table of Contents:
 - [Best praksis for Vue 3](#Best-praksis-for-Vue-3)
   - [Komponentnavn skal alltid være flerordige](#Komponentnavn-skal-alltid-være-flerordige)
   - [Importering av komponenter](#Importering-av-komponenter)
-  - [Bruk detaljerte prop-definisjoner](#Bruk-detaljerte-prop-definisjoner)
   - [v-for og v-if](#v-for-og-v-if)
     - [Bruk nøkkel med v-for](#Bruk-nøkkel-med-v-for)
     - [Bruk en unik id på nøkkel i v-for](#Bruk-en-unik-id-på-nøkkel-i-v-for)
@@ -13,6 +12,7 @@ Table of Contents:
   - [Komponentfilnavn for enkel-filkomponenter](#Komponentfilnavn-for-enkel-filkomponenter)
   - [Tett sammenkoblede komponentnavn](#Tett-sammenkoblede-komponentnavn)
   - [Navn på fullordskomponenter](#Navn-på-fullordskomponenter)
+  - [Bruk detaljerte prop-definisjoner](#Bruk-detaljerte-prop-definisjoner)
   - [Prop navn casing](#Prop-navn-casing)
   - [Enkeltfilkomponent på toppnivå elementrekkefølge](#Enkeltfilkomponent-på-toppnivå-elementrekkefølge)
 - [Best praksis for Pinia](#Best-praksis-for-Pinia)
@@ -60,25 +60,6 @@ PascalCase fungerer best med autocompletion i kodeeditorer, siden det er konsist
 ### ✅ Bra
 ```vue
 <TodoItem />
-```
----
-
-### Bruk detaljerte prop-definisjoner
-
-I kode som er commited bør prop-definisjoner alltid være så detaljerte som mulig, med å angi minst type(r).
-
-### ❌ Dårlig
-```js
-// Dette er bare OK når man prototyper
-const props = defineProps(['status'])
-```
-
-### ✅ Bra
-```js
-const props = defineProps({
-  status: String,
-  required: true
-})
 ```
 ---
 
@@ -275,6 +256,26 @@ components/
 components/
 |- StudentDashboardSettings.vue
 |- UserProfileOptions.vue
+```
+---
+
+
+### Bruk detaljerte prop-definisjoner
+
+I kode som er commited bør prop-definisjoner alltid være så detaljerte som mulig, med å angi minst type(r).
+
+### ❌ Dårlig
+```js
+// Dette er bare OK når man prototyper
+const props = defineProps(['status'])
+```
+
+### ✅ Bra
+```js
+const props = defineProps({
+  status: String,
+  required: true
+})
 ```
 ---
 
