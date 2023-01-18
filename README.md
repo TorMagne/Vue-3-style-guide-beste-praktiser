@@ -21,7 +21,7 @@ Table of Contents:
 
 
 
-## BBest praksis for Vue 3
+## Best praksis for Vue 3
 
 ### Komponentnavn skal alltid være flerordige
 
