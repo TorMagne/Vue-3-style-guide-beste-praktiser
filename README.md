@@ -109,7 +109,7 @@ Nøkkel med v-for er alltid nødvendig på komponenter for å opprettholde inter
 
 ### Bruk en unik id på nøkkel i v-for
 
-En v-for-loop skal bruke en unik id for en nøkkel hvis en er tilgjengelig
+En v-for-loop skal bruke en unik id for en nøkkel hvis en er tilgjengelig.
 
 en v-for-loop som bruker den unike id-egenskapen til hvert element som en måte å spore unikheten til hvert av listeelementene - som vanligvis foreslått av kompilatoren, og for å øke DOM-ytelsen.
 
@@ -179,7 +179,7 @@ Det er to vanlige tilfeller hvor dette kan være fristende:
 
 ### Komponent navn på views
 
-Navn på views komponenter skal være PascalCase og skal ha et forklarendre navn med en (View) postfiks
+Navn på views komponenter skal være PascalCase og skal ha et forklarendre navn med en (View) postfiks.
 
 PascalCase fungerer best med autocompletion i kodeeditorer, siden det er konsistent med hvordan vi refererer til komponenter i JS (X) og template.
 
