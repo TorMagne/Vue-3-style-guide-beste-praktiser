@@ -30,17 +30,19 @@ Table of Contents:
 
 ## Prettier code formatering
 
+#### Disse reglene for Prettier er noe all skal bruke!
+
 Prettier extension skal være installert i VS Code for alle prosjekter som bruker Vue 3.
 
 Dette er den rette extension å installere.
 
 ![Prettier](https://user-images.githubusercontent.com/61709493/213147526-92ad0894-6ca2-4a2e-9d10-e0fa87b30459.png)
 
-Sørg for at Prettier er valg som default formatter i VS Code setting
+Sørg for at Prettier er valg som default formatter i VS Code setting.
 
 ![Prettier setting](https://user-images.githubusercontent.com/61709493/213148470-562efe55-cba1-4a3d-bcc5-e5d7610e39a9.png)
 
-Sørg også for at Prettier: Use Editor Config er på
+Sørg også for at Prettier: Use Editor Config er på.
 
 ![Prettier Editor Config](https://user-images.githubusercontent.com/61709493/213149028-3a95b2ae-126b-40e8-9fb3-8683e4bb3415.png)
 
