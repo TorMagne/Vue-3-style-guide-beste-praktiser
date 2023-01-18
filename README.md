@@ -310,7 +310,7 @@ Enkeltfilkomponenter bør alltid være i denne rekkefølgen ``` <template> <scri
 - og `Store` (f.eks. `useUserStore`, `useCartStore`, `useProductStore`)
 - det første argumentet er en unik ID for store på tvers av applikasjonen din
   
-[Mer detaljer om Pinia define store](https://pinia.vuejs.org/core-concepts/)
+[Flere detaljer om Pinia define store](https://pinia.vuejs.org/core-concepts/)
   
 ### ❌ Dårlig
 ```js
