@@ -6,6 +6,7 @@ Table of Contents:
   - [Importering av komponenter](#Importering-av-komponenter)
   - [Bruk detaljerte prop-definisjoner](#Bruk-detaljerte-prop-definisjoner)
   - [Bruk nøkkel med v-for](#Bruk-nøkkel-med-v-for)
+  - [Bruk en unik id på nøkkel i v-for](#Bruk-en-unik-id-på-nøkkel-i-v-for)
   - [Unngå v-if med v-for](#Unngå-v-if-med-v-for)
   - [Komponent navn på views](#Komponent-navn-på-views)
   - [Komponentfilnavn for enkel-filkomponenter](#Komponentfilnavn-for-enkel-filkomponenter)
@@ -103,6 +104,32 @@ Nøkkel med v-for er alltid nødvendig på komponenter for å opprettholde inter
     {{ todo.text }}
   </li>
 </ul>
+```
+---
+
+### Bruk en unik id på nøkkel i v-for
+
+En v-for-loop skal bruke en unik id for en nøkkel hvis en er tilgjengelig
+
+en v-for-loop som bruker den unike id-egenskapen til hvert element som en måte å spore unikheten til hvert av listeelementene - som vanligvis foreslått av kompilatoren, og for å øke DOM-ytelsen.
+
+### ❌ Dårlig
+```vue
+<!-- Kan brukes hvis en unik id ikke er tilgjengelig eller for prototyping -->
+<div v-for="(task, taskIndex) in taskStore.favs" :key="taskIndex">
+  <div class="card-body">
+    <TaskDetails :task="task" />
+  </div>
+</div>
+```
+
+### ✅ Bra
+```vue
+<div v-for="task in taskStore.favs" :key="task.id">
+  <div class="card-body">
+    <TaskDetails :task="task" />
+  </div>
+</div>
 ```
 ---
 
