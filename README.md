@@ -69,7 +69,7 @@ Mann skal for eks ikke bruke ```<div></div>``` for en navigasjon. Mann skal da i
 
 Er du i tvil om hva som er riktig semantic i forhold til hva du holder på og lage kan du se på linked nedenfor.
 
-[HTML elementer](https://developer.mozilla.org/en-US/docs/Glossary/Semantics](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
+[HTML elementer](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
 
 ### ❌ Dårlig
 ```html
