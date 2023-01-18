@@ -90,8 +90,8 @@ Er du i tvil om hva som er riktig semantic i forhold til hva du holder på og la
 <!-- Navigation eksempel -->
 <nav>
   <ul>
-    <li><
-      a href="#">Home</a>
+    <li>
+      <a href="#">Home</a>
     </li>
     <li>
       <a href="#">Blog</a>
