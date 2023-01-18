@@ -3,6 +3,7 @@
 Table of Contents:
 - [Best praksis for Vue 3](#Best-praksis-for-Vue-3)
   - [Komponentnavn skal alltid være flerordige](#Komponentnavn-skal-alltid-være-flerordige)
+  - [Importering av komponenter](#Importering-av-komponenter)
   - [Bruk detaljerte prop-definisjoner](#Bruk-detaljerte-prop-definisjoner)
   - [Bruk nøkkel med v-for](#Bruk-nøkkel-med-v-for)
   - [Unngå v-if med v-for](#Unngå-v-if-med-v-for)
@@ -39,6 +40,24 @@ Navn på komponenter skal alltid være flerordige, med unntak av rot-App-kompone
 <TodoItem />
 ```
 ---
+
+### Importering av komponenter
+
+Imortering av komponenter skal vær PascalCase.
+
+PascalCase fungerer best med autocompletion i kodeeditorer, siden det er konsistent med hvordan vi refererer til komponenter i JS (X) og template.
+
+### ❌ Dårlig
+```vue
+<todo-item><todo-item/>
+
+<TodoItem><TodoItem/>
+```
+
+### ✅ Bra
+```
+<TodoItem />
+```
 
 ### Bruk detaljerte prop-definisjoner
 
