@@ -87,6 +87,7 @@ Er du i tvil om hva som er riktig semantic i forhold til hva du holder på og la
 
 ### ✅ Bra
 ```html
+<!-- Navigation eksempel -->
 <nav>
   <ul>
     <li><
