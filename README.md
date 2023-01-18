@@ -17,6 +17,7 @@ Table of Contents:
   - [Definer en Pinia store](#Definer-en-Pinia-store)
   - [Navngivning på Pinia store filer](#Navngivning-på-Pinia-store-filer)
   - [Pinia store importering eksempel](#Pinia-store-importering-eksempel)
+  - [Basic eksempel på en Pinia store](#Basic-eksempel-på-en-Pinia-store)
 
 ---
 
@@ -357,6 +358,7 @@ store/
 ---
   
 ### Pinia store importering eksempel
+
 ```vue
 <script setup>
 import { useTaskStore } from '../stores/TaskStore';
@@ -365,3 +367,42 @@ const taskStore = useTaskStore();
 </script>
 ```
 ---
+
+### Basic eksempel på en Pinia store
+
+```js
+import { defineStore } from 'pinia';
+
+export const useTaskStore = defineStore('taskStore', {
+  state: () => ({
+    // store state(s)
+    tasks: [
+      {id: 1, title: "buy some milk", isFav: false},
+      {id: 2, title: "play Gloomhaven", isFav: true}
+      ],
+  }),
+  getters: {
+    // returning true or false depending on the isFave
+    favs() {
+      return this.tasks.filter((task) => task.isFav);
+    },
+  },
+  actions: {
+    // push to tasks array
+    addTask(task) {
+      this.tasks.push(task);
+    },
+    // deleting a task depending if true or not
+    deleteTask(id) {
+      this.tasks = this.tasks.filter((task) => {
+        return task.id !== id;
+      });
+    },
+    // setting a task to fav if the id matches
+    toggleFav(id) {
+      const task = this.tasks.find((task) => task.id === id);
+      task.isFav = !task.isFav;
+    },
+  },
+});
+```
