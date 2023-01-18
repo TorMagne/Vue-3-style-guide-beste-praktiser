@@ -2,7 +2,7 @@
 
 Table of Contents:
 - [Prettier code formatering](#Prettier-code-formatering)
-- [HTML sematics](#HTML-sematics)
+- [HTML sematics og accessibility](#HTML-sematics-og-accessibility)
 - [Best praksis for Vue 3](#Best-praksis-for-Vue-3)
   - [v-for og v-if](#v-for-og-v-if)
     - [Bruk nøkkel med v-for](#Bruk-nøkkel-med-v-for)
@@ -53,7 +53,7 @@ Sørg også for at Prettier: Use Editor Config er på.
 
 ---
 
-## HTML sematics
+## HTML sematics og accessibility
 
 [Les mer om accessibility ](https://developer.mozilla.org/en-US/docs/Learn/Accessibility)
 
