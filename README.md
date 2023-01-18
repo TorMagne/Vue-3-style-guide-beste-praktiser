@@ -59,7 +59,7 @@ Sørg også for at Prettier: Use Editor Config er på.
 
 [Les mer om HTML semantics ](https://developer.mozilla.org/en-US/docs/Glossary/Semantics)
 
-- Alle skal skrive riktig HTML semantics og implementere god accessibility. Som forbedrer tilgjengeligheten, forbedrer også SEO, noe som gjør nettstedet ditt mer søkbar.
+:bangbang: Alle skal skrive riktig HTML semantics og implementere god accessibility. Som forbedrer tilgjengeligheten, forbedrer også SEO, noe som gjør nettstedet ditt mer søkbar. :bangbang:
 - Å bygge tilgjengelige nettsteder er til fordel for alle.
 - Å bry seg om tilgjengelighet viser god etikk og moral, noe som forbedrer ditt/bedriftens offentlige bilde.
 - Andre gode fremgangsmåter som forbedrer tilgjengeligheten gjør også nettstedet ditt mer brukbart for andre grupper, for eksempel mobiltelefonbrukere, synshemede etc, eller de med lav nettverkshastighet. Faktisk kan alle dra nytte av mange slike forbedringer.
