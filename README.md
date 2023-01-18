@@ -30,7 +30,7 @@ Table of Contents:
 
 ## Prettier code formatering
 
-#### Disse reglene for Prettier er noe all skal bruke!
+#### Disse reglene for Prettier er noe all skal bruke :bangbang:
 
 Prettier extension skal være installert i VS Code for alle prosjekter som bruker Vue 3.
 
