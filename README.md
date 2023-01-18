@@ -345,16 +345,16 @@ PascalCase fungerer best med autocompletion i kodeeditorer, siden det er konsist
   
 ### ❌ Dårlig
 ```
-store/
+stores/
 |- myuserstore.vue
 
-store/
+stores/
 |- myUserStore.vue
 ```
   
 ### ✅ Bra
 ```
-store/
+stores/
 |- MyUserStore.vue
 ```
 ---
