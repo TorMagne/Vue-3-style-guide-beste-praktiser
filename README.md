@@ -105,6 +105,35 @@ Er du i tvil om hva som er riktig semantic i forhold til hva du holder på og la
 
 ## aria-label
 
+:bangbang: aria-label er noe alle skal bruk hvis det mangler standard tilgjengelige navn på et element, eller ikke beskrive innholde nøyaktig, og det ikke er noe synlig innhold i DOM-en som kan assosieres med objektet for å gi det mening. :bangbang:
+
+Det meste av innholdet har et tilgjengelig navn generert fra tekstinnholdet i det umiddelbare innpakningselementet. Tilgjengelige navn kan også opprettes av visse attributter eller tilknyttede elementer.
+
+Som standard er en knapps tilgjengelige navn innholdet mellom den åpne og avsluttende ```<button>``` taggen, et bilde tilgjengelige navn er innholdet i alt-attributtet, og et ```<form></form>``` tilgjengelige navn er innholdet i det tilknyttede ```<label>``` elementet.
+
+Hvis ingen av disse alternativene er tilgjengelige, eller hvis standard tilgjengelig navn ikke er passende, bruk aria-label-attributtet for å definere det tilgjengelige navnet på et element.
+
+Et vanlig eksempel er en knapp som inneholder en SVG.
+
+aria-label-attributtet kan brukes til å definere en string som merker det interaktive elementet det er satt på. Dette gir elementet dets tilgjengelige navn.
+
+
+### ✅ Eksempel
+```html
+<button aria-label="Close" onclick="myDialog.close()">
+  <svg
+    aria-hidden="true"
+    focusable="false"
+    width="17"
+    height="17"
+    xmlns="http://www.w3.org/2000/svg">
+    <path
+      d="m.967 14.217 5.8-5.906-5.765-5.89L3.094.26l5.783 5.888L14.66.26l2.092 2.162-5.766 5.889 5.801 5.906-2.092 2.162-5.818-5.924-5.818        5.924-2.092-2.162Z"
+      fill="#000" />
+  </svg>
+</button>
+```
+
 ## Best praksis for Vue 3
 
 ## v-for og v-if
