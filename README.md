@@ -36,6 +36,16 @@ Dette er den rette extension å installere.
 
 ![Prettier](https://user-images.githubusercontent.com/61709493/213147526-92ad0894-6ca2-4a2e-9d10-e0fa87b30459.png)
 
+Sørg for at Prettier er valg som default formatter i VS Code setting
+
+![Prettier setting](https://user-images.githubusercontent.com/61709493/213148470-562efe55-cba1-4a3d-bcc5-e5d7610e39a9.png)
+
+Sørg også for at Prettier: Use Editor Config er på
+
+![Prettier Editor Config](https://user-images.githubusercontent.com/61709493/213148791-52be026a-fc11-4b51-86a1-5c67d7419e25.png)
+
+
+
 ## Best praksis for Vue 3
 
 ## v-for og v-if
