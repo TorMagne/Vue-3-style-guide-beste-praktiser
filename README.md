@@ -144,7 +144,7 @@ Er du i tvil så kan du finne mer informasjon om aria-label i linken nedenfor
 
 ## Tailwind apply
 
-Tailwindcss er utillity first og bruker et klasse basert system. Derfor kan det ofte bli veldig mye klasser på HTML elementer.
+Tailwindcss er utiliti først og bruker et klasse basert system. Derfor kan det ofte bli veldig mye klasser på HTML elementer.
 
 ```html
 <!-- eksempel på mye klasser på et HTML element -->
@@ -157,7 +157,7 @@ Hvis du finner deg selv i en lignende situasjon som det eksempelet ovenfår kan 
 
 Med @apply kan du ta alle klassene fra en HTML element og lage en ny custom klasse med de valgte klassene.
 
-Dette vil da skje i den CSS filen der tailwind er importert 
+Dette vil da skje i den CSS filen der tailwind er importert.
 
 ```css
 <!-- Tailwind CSS fil -->
@@ -172,12 +172,16 @@ Dette vil da skje i den CSS filen der tailwind er importert
 }
 ```
 
+Grunnen til at mann skal bruk ´´´@layer components``` er at disse klassene må komme før Tailwind sine utility klasser, Hvis mann setter de etter utilities eller bruker ```@apply utilites``` Så vil alle klassen som vi har i denne custome klassen bli overkjørt av utiliti klassene.
+
 ```html
 <!-- eksempel på på HTML etter flytting av klasser -->
 <a href="#" class="custom-button">
   Book you escape
 </a>
 ```
+
+---
 
 ## Best praksis for Vue 3
 
