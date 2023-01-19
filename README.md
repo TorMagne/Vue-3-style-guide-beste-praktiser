@@ -142,6 +142,17 @@ Er du i tvil så kan du finne mer informasjon om aria-label i linken nedenfor
 
 ## Tailwind og DaisyUI
 
+## Tailwind @apply
+
+Tailwindcss er utillity first og bruker et klasse basert system. Derfor kan det ofte bli veldig mye klasser på HTML elementer.
+
+```html
+<!-- eksempel på mye klasser på et HTML element -->
+<a href="#" class="inline-block px-5 py-3 rounde-lg shadow-lg bg-indigo-500 hover:bg-indigo-400 hover:-translate-y-0.5 focus:outline-none focus:ring focus:ring-offset-2 focus:ring-indigo-500 focus:ring-opacity-50 active:bg-indigo-600 transform transition text-white uppercase tracking-wider font-semibold text-sm sm:text-base">
+  Book you escape
+</a>
+```
+
 ## Best praksis for Vue 3
 
 ## v-for og v-if
