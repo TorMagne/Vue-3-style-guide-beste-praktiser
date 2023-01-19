@@ -258,6 +258,31 @@ Importering av fonter vil skje p책 den vanlige m책ten med og importere de i ```�
 
 ## one-off custom value i Tailwind
 
+Hvis mann har bruk for eks en height verdi p책 ```60px``` som ikke eksisterer i Tailwdind s책 kan mann bruke en one-off custom value.
+
+Det nermeste vi kommer til ```60px```i Tailwind er ```64px``` som vi da ville brukt klassen ```h-16``` til.
+
+For og bruke en vilk책rlige verdi vil vi da bruke en postfix med square brackets som vist i eksempelet nedenfor.
+
+```html
+<nav class="h-[60px]">
+  <ul>
+    <li>
+      <a href="#">Home</a>
+    </li>
+  </ul>
+</nav>
+```
+
+Flere eksempler.
+
+```
+bg-[#1da1f2]
+ease-[cubic-bezier(0.95,0.05,0.795,0.035)]
+underline-offset-[3px]
+font-[1100]
+```
+
 ## Best praksis for Vue 3
 
 ## v-for og v-if
