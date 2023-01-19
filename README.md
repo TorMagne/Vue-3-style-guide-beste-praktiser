@@ -6,6 +6,7 @@ Table of Contents:
   - [aria-label](#aria-label)
 - [Tailwind og DaisyUI](#Tailwind-og-DaisyUI)
   - [Tailwind apply](#Tailwind-apply)
+  - [Tailwind custom fonts](#Tailwind-custom-fonts)
 - [Best praksis for Vue 3](#Best-praksis-for-Vue-3)
   - [v-for og v-if](#v-for-og-v-if)
     - [Bruk nøkkel med v-for](#Bruk-nøkkel-med-v-for)
@@ -202,6 +203,29 @@ Flere gode kilder for og lære mer om Tailwind CSS i linkene nedenfor.
 - [Weather App Build (Vue 3 & Tailwind) - THe Net Ninja](https://www.youtube.com/watch?v=gUsBaB5ViAo&list=PL4cUxeGkcC9hfoy8vFQ5tbXO3vY0xhhUZ&ab_channel=TheNetNinja)
 
 ---
+
+## Tailwind custom fonts
+
+Får og bruke custom fonts som for eks google fonts i Tailwind CSS må du extende Tailwind CSS sin font family.
+
+Importering av fonter vil skje på den vanlige måten med og importere de i ```ìndex.html``` filen i Vue
+
+```html
+<!-- Eksempel på importering av fonter-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;700&family=Sora:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+  </head>
+```
+
+Dette gjøres da i ```tailwind.config.js``` filen.
 
 ## Best praksis for Vue 3
 
