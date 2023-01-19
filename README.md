@@ -146,6 +146,11 @@ Er du i tvil så kan du finne mer informasjon om aria-label i linken nedenfor
 
 Tailwindcss er utiliti først og bruker et klasse basert system. Derfor kan det ofte bli veldig mye klasser på HTML elementer.
 
+:bangbang: Anbefaler på det sterkeste å se den youtube videon i linken nedenfor. :bangbang:
+
+[Youtube video Composing Utilities with @apply](https://www.youtube.com/watch?v=TrftauE2Vyk&ab_channel=TailwindLabs)
+[Les mer om extracting classes with apply](https://tailwindcss.com/docs/reusing-styles#extracting-classes-with-apply)
+
 ```html
 <!-- eksempel på mye klasser på et HTML element -->
 <a href="#" class="inline-block px-5 py-3 rounde-lg shadow-lg bg-indigo-500 hover:bg-indigo-400 hover:-translate-y-0.5 focus:outline-none focus:ring focus:ring-offset-2 focus:ring-indigo-500 focus:ring-opacity-50 active:bg-indigo-600 transform transition text-white uppercase tracking-wider font-semibold text-sm sm:text-base">
