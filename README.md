@@ -206,7 +206,7 @@ Flere gode kilder for og lære mer om Tailwind CSS i linkene nedenfor.
 
 ## Tailwind custom fonts
 
-Får og bruke custom fonts som for eks google fonts i Tailwind CSS må du extende Tailwind CSS sin font familie.
+Får og bruke custom fonts/legge til ekstra fonter som for eks google fonts i Tailwind CSS må du extende Tailwind CSS sin font familie.
 
 Dette gjøres da i ```tailwind.config.js``` filen.
 
