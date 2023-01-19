@@ -149,13 +149,17 @@ Tailwindcss er utiliti først og bruker et klasse basert system. Derfor kan det 
 ```html
 <!-- eksempel på mye klasser på et HTML element -->
 <a href="#" class="inline-block px-5 py-3 rounde-lg shadow-lg bg-indigo-500 hover:bg-indigo-400 hover:-translate-y-0.5 focus:outline-none focus:ring focus:ring-offset-2 focus:ring-indigo-500 focus:ring-opacity-50 active:bg-indigo-600 transform transition text-white uppercase tracking-wider font-semibold text-sm sm:text-base">
-  Book you escape
+  Book your escape
+</a>
+
+<a href="#" class="inline-block px-5 py-3 rounde-lg shadow-lg bg-indigo-500 hover:bg-indigo-400 hover:-translate-y-0.5 focus:outline-none focus:ring focus:ring-offset-2 focus:ring-indigo-500 focus:ring-opacity-50 active:bg-indigo-600 transform transition text-white uppercase tracking-wider font-semibold text-sm sm:text-base">
+  Traveling
 </a>
 ```
 
 Hvis du finner deg selv i en lignende situasjon som det eksempelet ovenfår kan du bruke @apply.
 
-Med @apply kan du ta alle klassene fra en HTML element og lage en ny custom klasse med de valgte klassene.
+Med @apply kan du ta alle klassene fra en HTML element og lage en ny tilpassede klasse med de valgte klassene.
 
 Dette vil da skje i den CSS filen der tailwind er importert.
 
@@ -172,12 +176,16 @@ Dette vil da skje i den CSS filen der tailwind er importert.
 }
 ```
 
-Grunnen til at mann skal bruk ```@layer components``` er at disse klassene må komme før Tailwind sine utility klasser, Hvis mann setter de etter utilities eller bruker ```@apply utilites``` Så vil alle klassen som vi har i denne custome klassen bli overkjørt av utiliti klassene.
+Grunnen til at mann skal bruk ```@layer components``` er at disse klassene må komme før Tailwind sine utility klasser, Hvis mann setter de etter utilities eller bruker ```@apply utilites``` Så vil alle klassen som vi har i denne tilpassede klassen bli overkjørt av utiliti klassene. 
 
 ```html
-<!-- eksempel på på HTML etter flytting av klasser -->
+<!-- eksempel på HTML etter flytting av klasser -->
 <a href="#" class="custom-button">
   Book you escape
+</a>
+
+<a href="#" class="custom-button">
+  Traveling
 </a>
 ```
 
