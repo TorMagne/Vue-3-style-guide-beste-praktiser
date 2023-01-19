@@ -4,7 +4,7 @@ Table of Contents:
 - [Prettier code formatering](#Prettier-code-formatering)
 - [HTML sematics og accessibility](#HTML-sematics-og-accessibility)
   - [aria-label](#aria-label)
-- [Tailwind og Daisy UI](#Tailwind-og-Daisy-UI)
+- [Tailwind og DaisyUI](#Tailwind-og-DaisyUI)
   - [Tailwind @apply](#Tailwind-@apply)
 - [Best praksis for Vue 3](#Best-praksis-for-Vue-3)
   - [v-for og v-if](#v-for-og-v-if)
@@ -139,6 +139,8 @@ Er du i tvil så kan du finne mer informasjon om aria-label i linken nedenfor
 </button>
 ```
 ---
+
+## Tailwind og DaisyUI
 
 ## Best praksis for Vue 3
 
