@@ -149,6 +149,7 @@ Tailwindcss er utiliti først og bruker et klasse basert system. Derfor kan det 
 :bangbang: Anbefaler på det sterkeste å se den youtube videoen i linken nedenfor. Får en bedre forståelse av @apply og hvordan du får mest ut av Tailwind CSS :bangbang:
 
 [Youtube video Composing Utilities with @apply](https://www.youtube.com/watch?v=TrftauE2Vyk&ab_channel=TailwindLabs)
+
 [Les mer om extracting classes with apply](https://tailwindcss.com/docs/reusing-styles#extracting-classes-with-apply)
 
 ```html
