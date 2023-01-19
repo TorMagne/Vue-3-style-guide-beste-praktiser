@@ -4,7 +4,7 @@ Table of Contents:
 - [Prettier code formatering](#Prettier-code-formatering)
 - [HTML sematics og accessibility](#HTML-sematics-og-accessibility)
   - [aria-label](#aria-label)
--[Tailwind og Daisy UI](#Tailwind-og-Daisy-UI)
+- [Tailwind og Daisy UI](#Tailwind-og-Daisy-UI)
   -[Tailwind @apply](#Tailwind-@apply)
 - [Best praksis for Vue 3](#Best-praksis-for-Vue-3)
   - [v-for og v-if](#v-for-og-v-if)
