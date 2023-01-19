@@ -251,6 +251,8 @@ Importering av fonter vil skje på den vanlige måten med og importere de i ```�
   </head>
 ```
 
+---
+
 ## Best praksis for Vue 3
 
 ## v-for og v-if
