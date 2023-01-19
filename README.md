@@ -155,9 +155,9 @@ Tailwindcss er utillity first og bruker et klasse basert system. Derfor kan det 
 
 Hvis du finner deg selv i en lignende situasjon som det eksempelet ovenfår kan du bruke @apply.
 
-Med @apply kan du ta alle klassene fra et HTML og lage en ny custom klasse med de valgte klassene.
+Med @apply kan du ta alle klassene fra en HTML element og lage en ny custom klasse med de valgte klassene.
 
-Dette vil da skje i den css filen der tailwind er importert 
+Dette vil da skje i den CSS filen der tailwind er importert 
 
 ```css
 <!-- Tailwind CSS fil -->
