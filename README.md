@@ -210,6 +210,8 @@ Får og bruke custom fonts/legge til ekstra fonter som for eks google fonts i Ta
 
 Dette gjøres da i ```tailwind.config.js``` filen.
 
+[Les mer om Tailwind CSS font family](https://tailwindcss.com/docs/font-family)
+
 ```js
 /** @type {import('tailwindcss').Config} */
 module.exports = {
