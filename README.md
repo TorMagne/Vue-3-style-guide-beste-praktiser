@@ -153,6 +153,31 @@ Tailwindcss er utillity first og bruker et klasse basert system. Derfor kan det 
 </a>
 ```
 
+Hvis du finner deg selv i en lignende situasjon som det eksempelet ovenfår kan du bruke @apply.
+
+Med @apply kan du ta alle klassene fra et HTML og lage en ny custom klasse med de valgte klassene.
+
+Dette vil da skje i den css filen der tailwind er importert 
+
+```css
+<!-- tailwind css fil -->
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  custom-button {
+    @apply inline-block px-5 py-3 rounde-lg shadow-lg bg-indigo-500 hover:bg-indigo-400 hover:-translate-y-0.5 focus:outline-none focus:ring focus:ring-  offset-2 focus:ring-indigo-500 focus:ring-opacity-50 active:bg-indigo-600 transform transition text-white uppercase tracking-wider font-semibold text-sm sm:text-base;
+  }
+}
+```
+
+```html
+<a href="#" class="custom-button">
+  Book you escape
+</a>
+```
+
 ## Best praksis for Vue 3
 
 ## v-for og v-if
