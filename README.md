@@ -7,6 +7,7 @@ Table of Contents:
 - [Tailwind og DaisyUI](#Tailwind-og-DaisyUI)
   - [Tailwind apply](#Tailwind-apply)
   - [Tailwind custom fonts](#Tailwind-custom-fonts)
+  - [one-off custom value i Tailwind](#one-off-custom-value-i-Tailwind)
 - [Best praksis for Vue 3](#Best-praksis-for-Vue-3)
   - [v-for og v-if](#v-for-og-v-if)
     - [Bruk nøkkel med v-for](#Bruk-nøkkel-med-v-for)
@@ -254,6 +255,8 @@ Importering av fonter vil skje på den vanlige måten med og importere de i ```�
 ```
 
 ---
+
+## one-off custom value i Tailwind
 
 ## Best praksis for Vue 3
 
