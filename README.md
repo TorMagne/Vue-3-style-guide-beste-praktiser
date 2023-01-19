@@ -172,7 +172,7 @@ Dette vil da skje i den CSS filen der tailwind er importert.
 }
 ```
 
-Grunnen til at mann skal bruk ´´´@layer components``` er at disse klassene må komme før Tailwind sine utility klasser, Hvis mann setter de etter utilities eller bruker ```@apply utilites``` Så vil alle klassen som vi har i denne custome klassen bli overkjørt av utiliti klassene.
+Grunnen til at mann skal bruk ```@layer components``` er at disse klassene må komme før Tailwind sine utility klasser, Hvis mann setter de etter utilities eller bruker ```@apply utilites``` Så vil alle klassen som vi har i denne custome klassen bli overkjørt av utiliti klassene.
 
 ```html
 <!-- eksempel på på HTML etter flytting av klasser -->
