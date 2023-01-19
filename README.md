@@ -225,7 +225,7 @@ module.exports = {
 };
 ```
 
-Grunnen til at vi gjør det på denne måten er at vi da får alle utilities fra Tailwind CSS får denne font familien. Som for eksempel ```lg:font-sora```som da bare vil vise fonten Sora på stor skjerm og oppover.
+Grunnen til at vi gjør det på denne måten er at vi da får alle utilities fra Tailwind CSS får denne font familien. Som for eksempel ```lg:font-sora``` som da bare vil vise fonten Sora på stor skjerm og oppover.
 
 Dette vil da gjelde alle varianter i Tailwind CSS ```hover:font-sora```, ```lg:font-sora"```, ```md:font-sora``` osv.
 
