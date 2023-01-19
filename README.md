@@ -195,6 +195,12 @@ Grunnen til at mann skal bruk ```@layer components``` er at disse klassene må k
 </a>
 ```
 
+Flere gode kilder for og lære mer om Tailwind CSS i linkene nedenfor
+
+- [Tailwind CSS youtube kanal](https://www.youtube.com/@TailwindLabs/videos)
+- [Tailwind dokumentasjon](https://tailwindcss.com/)
+- [Weather App Build (Vue 3 & Tailwind) - THe Net Ninja](https://www.youtube.com/watch?v=gUsBaB5ViAo&list=PL4cUxeGkcC9hfoy8vFQ5tbXO3vY0xhhUZ&ab_channel=TheNetNinja)
+
 ---
 
 ## Best praksis for Vue 3
