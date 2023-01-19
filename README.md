@@ -206,7 +206,31 @@ Flere gode kilder for og lære mer om Tailwind CSS i linkene nedenfor.
 
 ## Tailwind custom fonts
 
-Får og bruke custom fonts som for eks google fonts i Tailwind CSS må du extende Tailwind CSS sin font family.
+Får og bruke custom fonts som for eks google fonts i Tailwind CSS må du extende Tailwind CSS sin font familie.
+
+Dette gjøres da i ```tailwind.config.js``` filen.
+
+```js
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ['./public/**/*.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
+  theme: {
+    extend: {
+      fontFamily: {
+        sora: "'Sora', sans-serif",
+      },
+    },
+  },
+  plugins: [],
+};
+```
+
+Grunnen til at vi gjør det på denne måten er at vi da får alle utilities fra Tailwind CSS får denne font familien. Som for eksempel ```lg:font-sora```som da bare vil vise fonten Sora på stor skjerm og oppover.
+
+```html
+<!-- eksempel -->
+<h1 class="lg:font-sora">Eksempel heading</h1>
+```
 
 Importering av fonter vil skje på den vanlige måten med og importere de i ```ìndex.html``` filen i Vue
 
@@ -224,8 +248,6 @@ Importering av fonter vil skje på den vanlige måten med og importere de i ```�
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;700&family=Sora:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
   </head>
 ```
-
-Dette gjøres da i ```tailwind.config.js``` filen.
 
 ## Best praksis for Vue 3
 
