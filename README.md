@@ -5,7 +5,7 @@ Table of Contents:
 - [HTML sematics og accessibility](#HTML-sematics-og-accessibility)
   - [aria-label](#aria-label)
 - [Tailwind og DaisyUI](#Tailwind-og-DaisyUI)
-  - [Tailwind @apply](#Tailwind-@apply)
+  - [Tailwind apply](#Tailwind-apply)
 - [Best praksis for Vue 3](#Best-praksis-for-Vue-3)
   - [v-for og v-if](#v-for-og-v-if)
     - [Bruk nøkkel med v-for](#Bruk-nøkkel-med-v-for)
@@ -142,7 +142,7 @@ Er du i tvil så kan du finne mer informasjon om aria-label i linken nedenfor
 
 ## Tailwind og DaisyUI
 
-## Tailwind @apply
+## Tailwind apply
 
 Tailwindcss er utillity first og bruker et klasse basert system. Derfor kan det ofte bli veldig mye klasser på HTML elementer.
 
