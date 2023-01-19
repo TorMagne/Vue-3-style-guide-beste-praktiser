@@ -146,7 +146,7 @@ Er du i tvil så kan du finne mer informasjon om aria-label i linken nedenfor
 
 ## Tailwind apply
 
-Tailwindcss er utiliti først og bruker et klasse basert system. Derfor kan det ofte bli veldig mye klasser på HTML elementer.
+Tailwind CSS er utiliti først og bruker et klasse basert system. Derfor kan det ofte bli veldig mye klasser på HTML elementer.
 
 :bangbang: Anbefaler på det sterkeste å se den youtube videoen i linken nedenfor. Får en bedre forståelse av @apply og hvordan du får mest ut av Tailwind CSS :bangbang:
 
