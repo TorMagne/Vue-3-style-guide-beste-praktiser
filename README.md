@@ -160,7 +160,7 @@ Med @apply kan du ta alle klassene fra et HTML og lage en ny custom klasse med d
 Dette vil da skje i den css filen der tailwind er importert 
 
 ```css
-<!-- tailwind css fil -->
+<!-- Tailwind CSS fil -->
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -173,6 +173,7 @@ Dette vil da skje i den css filen der tailwind er importert
 ```
 
 ```html
+<!-- eksempel på på HTML etter flytting av klasser -->
 <a href="#" class="custom-button">
   Book you escape
 </a>
