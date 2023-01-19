@@ -276,11 +276,11 @@ For og bruke en vilkårlige verdi vil vi da bruke en postfix med square brackets
 
 Flere eksempler.
 
-```
-bg-[#1da1f2]
-ease-[cubic-bezier(0.95,0.05,0.795,0.035)]
-underline-offset-[3px]
-font-[1100]
+```html
+<button class="bg-[#1da1f2]">...</button>
+<div class="ease-[cubic-bezier(0.95,0.05,0.795,0.035)]">...</div>
+<p class="underline-offset-[3px]">...</p>
+<p class="font-[1100]">...</p>
 ```
 
 ## Best praksis for Vue 3
