@@ -361,6 +361,8 @@ setTimeout(doSomething, 86400000);
 const DAY_IN_MILLISECONDS = 86_400_000;setTimeout(doSomething, DAY_IN_MILLISECONDS);
 ```
 
+---
+
 ### Bruk variabler for å forklare
 
 Vi bør lage variabelnavn som forklarer hva de inneholder.
