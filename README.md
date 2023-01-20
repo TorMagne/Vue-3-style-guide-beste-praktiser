@@ -10,7 +10,6 @@ Table of Contents:
   - [Tailwind custom fonts](#Tailwind-custom-fonts)
   - [one-off custom value i Tailwind](#one-off-custom-value-i-Tailwind)
 - [Best praksis for Javacript](#Best-praksis-for-Javacript)
-  - [Variabler](#Variabler)
     - [Bruk samme ordforråd for samme type variabel](#Bruk-samme-ordforråd-for-samme-type-variabel)
     - [Bruk søkbare navn](#Bruk-søkbare-navn)
     - [Bruk variabler for å forklare](#Bruk-variabler-for-å-forklare)
@@ -320,8 +319,6 @@ const currentDate = new Date();
 ```
 
 ---
-
-## Variabler
 
 ## Bruk samme ordforråd for samme type variabel.
 
