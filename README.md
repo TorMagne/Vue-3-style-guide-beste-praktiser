@@ -10,6 +10,7 @@ Table of Contents:
   - [Tailwind custom fonts](#Tailwind-custom-fonts)
   - [one-off custom value i Tailwind](#one-off-custom-value-i-Tailwind)
 - [Best praksis for Vue 3](#Best-praksis-for-Vue-3)
+  - [Navn, Variabler, og Funksjoner](#Navn,-Variabler,-og-Funksjoner)
   - [v-for og v-if](#v-for-og-v-if)
     - [Bruk nøkkel med v-for](#Bruk-nøkkel-med-v-for)
     - [Bruk en unik id på nøkkel i v-for](#Bruk-en-unik-id-på-nøkkel-i-v-for)
