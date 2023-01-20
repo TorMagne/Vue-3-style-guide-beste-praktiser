@@ -467,14 +467,14 @@ Prøv og bruke forklarende variabler. Som for eks ```forumID``` og ```userName``
 
 ### ❌ Dårlig
 ```js
-const handleUsers = (u) => {
+const handleUsers = (id) => {
 ...
 }
 ```
 
 ### ✅ Bra
 ```js
-const handleUsers = (user) => {
+const handleUsers = (userId) => {
 ...
 }
 ```
