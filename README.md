@@ -15,6 +15,7 @@ Table of Contents:
     - [Bruk variabler for å forklare](#Bruk-variabler-for-å-forklare)
     - [Ingen mental kartlegging](#Ingen-mental-kartlegging)
     - [Ingen unødvendig kontekst](#Ingen-unødvendig-kontekst)
+    - [Navngi funksjoner etter hva de gjør](#Navngi-funksjoner-etter-hva-de-gjør)
 - [Best praksis for Vue 3](#Best-praksis-for-Vue-3)
   - [v-for og v-if](#v-for-og-v-if)
     - [Bruk nøkkel med v-for](#Bruk-nøkkel-med-v-for)
@@ -422,6 +423,37 @@ const car = {
   model: "Fiesta",
   color: "Blue"
 };
+```
+
+---
+
+## Navngi funksjoner etter hva de gjør
+
+Vi skal navngi funksjoner på en måte som forteller hva de gjør.
+
+Hvis ikke kan det fort bli vanskelig for andre og skjønne meningen bak funksjonen.
+
+
+### ❌ Dårlig
+```js
+function add(date, years) {
+  // ...
+}
+
+const date = new Date();
+
+add(date, 1);
+```
+
+### ✅ Bra
+```js
+function addYearsToDate(date, years) {
+  // ...
+}
+
+const date = new Date();
+
+addYearsToDate(date, 1);
 ```
 
 ---
