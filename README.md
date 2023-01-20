@@ -1,7 +1,7 @@
 ## Disse reglene hjelper til med å forhindre feil, så lær og følg dem til enhver tid. Unntak kan eksistere, men bør være svært sjeldne.
 
 Table of Contents:
-- [Prettier code formatering](#Prettier-code-formatering)
+- [Prettier kode formatering](#Prettier-kode-formatering)
 - [HTML sematics og accessibility](#HTML-sematics-og-accessibility)
   - [aria-label](#aria-label)
 - [Tailwind og DaisyUI](#Tailwind-og-DaisyUI)
@@ -34,7 +34,7 @@ Table of Contents:
 
 
 
-## Prettier code formatering
+## Prettier kode formatering
 
 :bangbang: Disse reglene for Prettier er noe alle skal bruke. :bangbang:
 
