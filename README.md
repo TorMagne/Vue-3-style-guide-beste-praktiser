@@ -296,6 +296,10 @@ Flere eksempler.
 <p class="font-[1100]">...</p>
 ```
 
+---
+
+## Navn, Variabler, og Funksjoner
+
 ## Best praksis for Vue 3
 
 ## v-for og v-if
