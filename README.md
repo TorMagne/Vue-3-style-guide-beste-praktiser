@@ -322,9 +322,9 @@ const currentDate = new Date();
 
 ## Bruk samme ordforråd for samme type variabel.
 
-Vi bør bruke samme vokabular for samme type variabel.
+Vi skal bruke samme vokabular for samme type variabel.
 
-For eksempel bør vi ikke ha 3 navn på en bruker.
+For eksempel skal vi ikke ha 3 navn på en bruker.
 
 
 ### ❌ Dårlig
@@ -343,11 +343,11 @@ getUser();
 
 ## Bruk søkbare navn
 
-Vi bør bruke søkbare navn.
+Vi skal bruke søkbare navn.
 
 Dette utelukker navn som er for korte eller for generiske.
 
-Dessuten bør vi ikke ha magiske tall.
+Dessuten skal vi ikke ha magiske tall.
 
 ### ❌ Dårlig
 ```js
@@ -363,7 +363,7 @@ const DAY_IN_MILLISECONDS = 86_400_000;setTimeout(doSomething, DAY_IN_MILLISECON
 
 ## Bruk variabler for å forklare
 
-Vi bør lage variabel navn som forklarer hva de inneholder.
+Vi skal lage variabel navn som forklarer hva de inneholder.
 
 ### ✅ Eksempel
 ```js
@@ -377,7 +377,7 @@ Nå vet vi at et telefonnummer kan deles inn i disse numrene.
 
 ## Ingen mental kartlegging
 
-Vi bør unngå behovet for å kartlegge betydningen av variabelen med tankene våre.
+Vi skal unngå behovet for å kartlegge betydningen av variabelen med tankene våre.
 
 ### ❌ Dårlig
 ```js
