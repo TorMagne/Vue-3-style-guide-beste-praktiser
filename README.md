@@ -16,6 +16,7 @@ Table of Contents:
     - [Ingen mental kartlegging](#Ingen-mental-kartlegging)
     - [Ingen unødvendig kontekst](#Ingen-unødvendig-kontekst)
     - [Navngi funksjoner etter hva de gjør](#Navngi-funksjoner-etter-hva-de-gjør)
+    - [Funksjons parameter](#Funksjons-parameter)
 - [Best praksis for Vue 3](#Best-praksis-for-Vue-3)
   - [v-for og v-if](#v-for-og-v-if)
     - [Bruk nøkkel med v-for](#Bruk-nøkkel-med-v-for)
@@ -434,7 +435,7 @@ Hvis ikke kan det fort bli vanskelig for andre og skjønne meningen bak funksjon
 
 ### ❌ Dårlig
 ```js
-function add(date, years) {
+const add = (date, years) => {
   // ...
 }
 
@@ -445,13 +446,37 @@ add(date, 1);
 
 ### ✅ Bra
 ```js
-function addYearsToDate(date, years) {
+const addYearsToDate = (date, years) => {
   // ...
 }
 
 const date = new Date();
 
 addYearsToDate(date, 1);
+```
+
+---
+
+## Funksjons parameter
+
+Vi skal unngå behovet for å kartlegge betydningen av parametere med tankene våre.
+
+En funksjons parameter skal ikke være en singel bokstav.
+
+Prøv og bruke forklarende variabler. Som for eks ```forumID``` og ```userName``` osv.
+
+### ❌ Dårlig
+```js
+const handleUsers = (u) => {
+...
+}
+```
+
+### ✅ Bra
+```js
+const handleUsers = (user) => {
+...
+}
 ```
 
 ---
