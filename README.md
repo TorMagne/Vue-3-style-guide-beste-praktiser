@@ -373,7 +373,7 @@ const [areaCode, exchangeCode, lineNumber] = phone.split('-');
 
 Nå vet vi at et telefonnummer kan deles inn i disse numrene.
 
---
+---
 
 ## Best praksis for Vue 3
 
