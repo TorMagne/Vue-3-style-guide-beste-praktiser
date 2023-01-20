@@ -14,6 +14,7 @@ Table of Contents:
     - [Bruk søkbare navn](#Bruk-søkbare-navn)
     - [Bruk variabler for å forklare](#Bruk-variabler-for-å-forklare)
     - [Ingen mental kartlegging](#Ingen-mental-kartlegging)
+    - [Ingen unødvendig kontekst](#Ingen-unødvendig-kontekst)
 - [Best praksis for Vue 3](#Best-praksis-for-Vue-3)
   - [v-for og v-if](#v-for-og-v-if)
     - [Bruk nøkkel med v-for](#Bruk-nøkkel-med-v-for)
@@ -394,6 +395,36 @@ phoneNumbers.forEach(phoneNumber => {
   call(phoneNumber);
 });
 ```
+
+---
+
+## Ingen unødvendig kontekst
+
+Det er fort gjort og legge til for mye informasjon i identifikasjonsnavnene våre.
+
+Dette ska vi unngå og gjøre.
+
+Vi trenger ikke bil foran alle eiendomsnavn.
+
+### ❌ Dårlig
+```js
+const car = {
+  carMake: "Ford",
+  carModel: "Fiesta",
+  carColor: "Blue"
+};
+```
+
+### ✅ Bra
+```js
+const car = {
+  make: "Ford",
+  model: "Fiesta",
+  color: "Blue"
+};
+```
+
+---
 
 ## Best praksis for Vue 3
 
