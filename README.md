@@ -14,6 +14,7 @@ Table of Contents:
     - [Bruk samme ordforråd for samme type variabel](#Bruk-samme-ordforråd-for-samme-type-variabel)
     - [Bruk søkbare navn](#Bruk-søkbare-navn)
     - [Bruk variabler for å forklare](#Bruk-variabler-for-å-forklare)
+    - [Ingen mental kartlegging](#Ingen-mental-kartlegging)
 - [Best praksis for Vue 3](#Best-praksis-for-Vue-3)
   - [v-for og v-if](#v-for-og-v-if)
     - [Bruk nøkkel med v-for](#Bruk-nøkkel-med-v-for)
@@ -376,6 +377,26 @@ const [areaCode, exchangeCode, lineNumber] = phone.split('-');
 Nå vet vi at et telefonnummer kan deles inn i disse numrene.
 
 ---
+
+## Ingen mental kartlegging
+
+Vi bør unngå behovet for å kartlegge betydningen av variabelen med tankene våre.
+
+For eksempel bør vi ikke skrive:
+### ❌ Dårlig
+```js
+phoneNumbers.forEach(p => {
+  call(p);
+});
+```
+
+I stedet skriver vi:
+### ✅ Bra
+```js
+phoneNumbers.forEach(phoneNumber => {
+  call(phoneNumber);
+});
+```
 
 ## Best praksis for Vue 3
 
