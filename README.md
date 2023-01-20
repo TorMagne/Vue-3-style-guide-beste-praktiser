@@ -149,7 +149,7 @@ Er du i tvil så kan du finne mer informasjon om aria-label i linken nedenfor
 
 Anbefaler alle og laste ned Tailwind CSS IntelliSense extension. Sånn at mann får intellisense på alle Tailwind klassene.
 
-Får også egenskapen til og hover en klasse fra Tailwind får og se den faktise CSS til den klassen.
+Får også egenskapen til og hover en klasse fra Tailwind får og se CSS til den klassen.
 
 Den rette extension og installere vises på bildet nedenfor.
 
