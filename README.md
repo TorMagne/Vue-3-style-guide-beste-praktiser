@@ -363,9 +363,9 @@ const DAY_IN_MILLISECONDS = 86_400_000;setTimeout(doSomething, DAY_IN_MILLISECON
 
 ---
 
-### Bruk variabler for å forklare
+## Bruk variabler for å forklare
 
-Vi bør lage variabelnavn som forklarer hva de inneholder.
+Vi bør lage variabel navn som forklarer hva de inneholder.
 
 ### ✅ Eksempel
 ```js
