@@ -4,7 +4,7 @@ Table of Contents:
 - [Prettier kode formatering](#Prettier-kode-formatering)
 - [HTML sematics og accessibility](#HTML-sematics-og-accessibility)
   - [aria-label](#aria-label)
-- [Tailwind og DaisyUI](#Tailwind-og-DaisyUI)
+- [Tailwind](#Tailwind)
   - [Tailwind apply](#Tailwind-apply)
   - [Tailwind custom fonts](#Tailwind-custom-fonts)
   - [one-off custom value i Tailwind](#one-off-custom-value-i-Tailwind)
@@ -142,7 +142,7 @@ Er du i tvil så kan du finne mer informasjon om aria-label i linken nedenfor
 ```
 ---
 
-## Tailwind og DaisyUI
+## Tailwind
 
 ## Tailwind apply
 
