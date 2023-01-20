@@ -10,6 +10,9 @@ Table of Contents:
   - [Tailwind custom fonts](#Tailwind-custom-fonts)
   - [one-off custom value i Tailwind](#one-off-custom-value-i-Tailwind)
 - [Best praksis for Javacript](#Best-praksis-for-Javacript)
+  - [Bruk samme ordforråd for samme type variabel](#Bruk-samme-ordforråd-for-samme-type-variabel)
+  - [Bruk søkbare navn](#Bruk-søkbare-navn)
+  - [Bruk variabler for å forklare](#Bruk-variabler-for-å-forklare)
 - [Best praksis for Vue 3](#Best-praksis-for-Vue-3)
   - [v-for og v-if](#v-for-og-v-if)
     - [Bruk nøkkel med v-for](#Bruk-nøkkel-med-v-for)
@@ -299,6 +302,75 @@ Flere eksempler.
 ---
 
 ## Best praksis for Javacript
+
+### Bruk betydningsfulle og uttalbare variabel navn.
+
+Betydnings- og uttalbare variabelnavn er bra.
+
+### ❌ Dårlig
+```js
+const yyyymmd = new Date();
+```
+
+### ✅ Bra
+```js
+const currentDate = new Date();
+```
+
+---
+
+## Bruk samme ordforråd for samme type variabel.
+
+Vi bør bruke samme vokabular for samme type variabel.
+
+For eksempel bør vi ikke ha 3 navn på en bruker.
+
+
+### ❌ Dårlig
+```js
+getUserInfo();
+getPersonData();
+getSubscriberRecord();
+```
+
+### ✅ Bra
+```js
+getUser();
+```
+
+---
+
+## Bruk søkbare navn
+
+Vi bør bruke søkbare navn.
+
+Dette utelukker navn som er for korte eller for generiske.
+
+Dessuten bør vi ikke ha magiske tall.
+
+### ❌ Dårlig
+```js
+setTimeout(doSomething, 86400000);
+```
+
+### ✅ Bra
+```js
+const DAY_IN_MILLISECONDS = 86_400_000;setTimeout(doSomething, DAY_IN_MILLISECONDS);
+```
+
+### Bruk variabler for å forklare
+
+Vi bør lage variabelnavn som forklarer hva de inneholder.
+
+### ✅ Eksempel
+```js
+const phone = "555-555-1212";
+const [areaCode, exchangeCode, lineNumber] = phone.split('-'); 
+```
+
+Nå vet vi at et telefonnummer kan deles inn i disse numrene.
+
+--
 
 ## Best praksis for Vue 3
 
