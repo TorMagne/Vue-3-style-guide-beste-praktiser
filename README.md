@@ -5,6 +5,7 @@ Table of Contents:
 - [HTML sematics og accessibility](#HTML-sematics-og-accessibility)
   - [aria-label](#aria-label)
 - [Tailwind](#Tailwind)
+  - [Tailwind extension](#Tailwind-extension)
   - [Tailwind apply](#Tailwind-apply)
   - [Tailwind custom fonts](#Tailwind-custom-fonts)
   - [one-off custom value i Tailwind](#one-off-custom-value-i-Tailwind)
@@ -143,6 +144,17 @@ Er du i tvil så kan du finne mer informasjon om aria-label i linken nedenfor
 ---
 
 ## Tailwind
+
+## Tailwind extension
+
+Anbefaler alle og laste ned Tailwind CSS IntelliSense extension. Sånn at mann får intellisense på alle Tailwind klassene.
+
+Får også egenskapen til og hover en klasse fra Tailwind får og se den faktise CSS til den klassen.
+
+Den rette extension og installere vises på bildet nedenfor.
+
+![Tailwind IntelliSense](https://user-images.githubusercontent.com/61709493/213677701-5c5b4d48-62aa-4774-9e96-c813f69d0296.png)
+
 
 ## Tailwind apply
 
