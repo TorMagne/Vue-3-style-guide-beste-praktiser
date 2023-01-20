@@ -382,17 +382,17 @@ Nå vet vi at et telefonnummer kan deles inn i disse numrene.
 
 Vi bør unngå behovet for å kartlegge betydningen av variabelen med tankene våre.
 
-For eksempel bør vi ikke skrive:
 ### ❌ Dårlig
 ```js
+<!-- For eksempel bør vi ikke skrive: -->
 phoneNumbers.forEach(p => {
   call(p);
 });
 ```
 
-I stedet skriver vi:
 ### ✅ Bra
 ```js
+<!-- I stedet skriver vi: -->
 phoneNumbers.forEach(phoneNumber => {
   call(phoneNumber);
 });
