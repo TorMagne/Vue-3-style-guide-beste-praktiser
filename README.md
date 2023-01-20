@@ -383,7 +383,6 @@ Vi skal unngå behovet for å kartlegge betydningen av variabelen med tankene v�
 
 ### ❌ Dårlig
 ```js
-<!-- For eksempel bør vi ikke skrive: -->
 phoneNumbers.forEach(p => {
   call(p);
 });
@@ -391,7 +390,6 @@ phoneNumbers.forEach(p => {
 
 ### ✅ Bra
 ```js
-<!-- I stedet skriver vi: -->
 phoneNumbers.forEach(phoneNumber => {
   call(phoneNumber);
 });
