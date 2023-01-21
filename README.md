@@ -384,6 +384,10 @@ Vi skal unngå behovet for å kartlegge betydningen av variabelen med tankene v�
 
 ### ❌ Dårlig
 ```js
+items.forEach(el => {
+  ...
+});
+
 phoneNumbers.forEach(p => {
   call(p);
 });
