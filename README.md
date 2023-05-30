@@ -4,6 +4,7 @@ Table of Contents:
 - [Prettier kode formatering](#Prettier-kode-formatering)
 - [HTML sematics og accessibility](#HTML-sematics-og-accessibility)
   - [aria-label](#aria-label)
+  - [max width for paragrafer](#max-width-for-paragrafer)
 - [Tailwind](#Tailwind)
   - [Tailwind extension](#Tailwind-extension)
   - [Tailwind apply](#Tailwind-apply)
@@ -149,6 +150,39 @@ Er du i tvil så kan du finne mer informasjon om aria-label i linken nedenfor
   </svg>
 </button>
 ```
+---
+
+## max width for paragrafer
+Paragrafer eller containeren rundt en paragraf skal ha en max-width på 600px.
+
+Dette skal vi gjøre sånn at tekst på nettsider blir lettere og lese.
+
+Paragrafer kan fort bli veldig vanskelig og lese hvis de strekker seg over hele skjermen.
+
+### ✅ Eksempel 1
+```html
+<div class="container">
+  <p>This is where our text goes.</p>
+</div>
+```
+
+```css
+.container {
+  max-width: 600px;
+}
+```
+
+### ✅ Eksempel 2
+```html
+<p>This is where our text goes.</p>
+```
+
+```css
+p {
+  max-width: 600px;
+}
+```
+
 ---
 
 ## Tailwind
