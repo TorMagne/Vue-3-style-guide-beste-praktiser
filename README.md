@@ -874,16 +874,16 @@ PascalCase fungerer best med autocompletion i kodeeditorer, siden det er konsist
 ### ❌ Dårlig
 ```
 stores/
-|- myuserstore.vue
+|- myuserstore.js
 
 stores/
-|- myUserStore.vue
+|- myUserStore.js
 ```
   
 ### ✅ Bra
 ```
 stores/
-|- MyUserStore.vue
+|- MyUserStore.js
 ```
 ---
   
