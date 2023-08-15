@@ -51,6 +51,20 @@ Table of Contents:
 :bangbang: Det kommer til og være en ```.prettierrc``` fil i alle Vue 3 prosjekter.
 Denne filen innholder regler for Prettier som alle skal følge. :bangbang:
 
+### Innhold for prettierrc fil
+```js
+{
+  "trailingComma": "es5",
+  "tabWidth": 2,
+  "semi": true,
+  "singleQuote": true,
+  "bracketSpacing": true,
+  "vueIndentScriptAndStyle": true,
+  "printWidth": 100,
+  "singleAttributePerLine": false
+}
+```
+
 Prettier extension skal være installert i VS Code for alle prosjekter som bruker Vue 3.
 
 Dette er den rette extension å installere.
@@ -153,35 +167,32 @@ Er du i tvil så kan du finne mer informasjon om aria-label i linken nedenfor
 ---
 
 ## max width for paragrafer
-Paragrafer eller containeren rundt en paragraf skal ha en max-width på 600px.
+Paragrafer skal ha en max-width.
 
 Dette skal vi gjøre sånn at tekst på nettsider blir lettere og lese.
 
 Paragrafer kan fort bli veldig vanskelig og lese hvis de strekker seg over hele skjermen.
 
+Heldigvis så har tailwind dette innebygd i klasser som vist nedenfor.
+
+max-w-prose klassen gir et element en maksimal bredde optimalisert for lesbarhet og tilpasser seg basert på skriftstørrelsen.
+
 ### ✅ Eksempel 1
 ```html
-<div class="container">
-  <p>This is where our text goes.</p>
+<div class="text-sm max-w-prose ...">
+  <p>Oh yeah. It's the best part. It's crunchy, it's explosive, it's where the muffin breaks free of the pan and sort of does it's own thing. I'll tell you. That's a million dollar idea right there. Just sell the tops.</p>
+</div>
+
+<div class="text-base max-w-prose ...">
+  <p>Oh yeah. It's the best part. It's crunchy, it's explosive, it's where the muffin breaks free of the pan and sort of does it's own thing. I'll tell you. That's a million dollar idea right there. Just sell the tops.</p>
+</div>
+
+<div class="text-xl max-w-prose ...">
+  <p>Oh yeah. It's the best part. It's crunchy, it's explosive, it's where the muffin breaks free of the pan and sort of does it's own thing. I'll tell you. That's a million dollar idea right there. Just sell the tops.</p>
 </div>
 ```
 
-```css
-.container {
-  max-width: 600px;
-}
-```
-
-### ✅ Eksempel 2
-```html
-<p>This is where our text goes.</p>
-```
-
-```css
-p {
-  max-width: 600px;
-}
-```
+[Les mer om max-w-prose for tekst i tailwind](https://tailwindcss.com/docs/max-width#reading-width)
 
 ---
 
@@ -210,11 +221,11 @@ Tailwind CSS er utiliti først og bruker et klasse basert system. Derfor kan det
 
 ```html
 <!-- eksempel på mye klasser på et HTML element -->
-<a href="#" class="inline-block px-5 py-3 rounde-lg shadow-lg bg-indigo-500 hover:bg-indigo-400 hover:-translate-y-0.5 focus:outline-none focus:ring focus:ring-offset-2 focus:ring-indigo-500 focus:ring-opacity-50 active:bg-indigo-600 transform transition text-white uppercase tracking-wider font-semibold text-sm sm:text-base">
+<a href="#" class="inline-block px-5 py-3 rounded-lg shadow-lg bg-indigo-500 hover:bg-indigo-400 hover:-translate-y-0.5 focus:outline-none focus:ring focus:ring-offset-2 focus:ring-indigo-500 focus:ring-opacity-50 active:bg-indigo-600 transform transition text-white uppercase tracking-wider font-semibold text-sm sm:text-base">
   Book your escape
 </a>
 
-<a href="#" class="inline-block px-5 py-3 rounde-lg shadow-lg bg-indigo-500 hover:bg-indigo-400 hover:-translate-y-0.5 focus:outline-none focus:ring focus:ring-offset-2 focus:ring-indigo-500 focus:ring-opacity-50 active:bg-indigo-600 transform transition text-white uppercase tracking-wider font-semibold text-sm sm:text-base">
+<a href="#" class="inline-block px-5 py-3 rounded-lg shadow-lg bg-indigo-500 hover:bg-indigo-400 hover:-translate-y-0.5 focus:outline-none focus:ring focus:ring-offset-2 focus:ring-indigo-500 focus:ring-opacity-50 active:bg-indigo-600 transform transition text-white uppercase tracking-wider font-semibold text-sm sm:text-base">
   Traveling
 </a>
 ```
