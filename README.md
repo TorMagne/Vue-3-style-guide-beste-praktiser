@@ -19,6 +19,8 @@ Table of Contents:
     - [Navngi funksjoner etter hva de gjør](#Navngi-funksjoner-etter-hva-de-gjør)
     - [Funksjons parameter](#Funksjons-parameter)
 - [Best praksis for Vue 3](#Best-praksis-for-Vue-3)
+  - [Axios config i main js](#Axios-config-i-main-js)
+  - [Async Await med Axios i Vue 3](#Async-Await-med-Axios-i-Vue-3)
   - [v-for og v-if](#v-for-og-v-if)
     - [Bruk nøkkel med v-for](#Bruk-nøkkel-med-v-for)
     - [Bruk en unik id på nøkkel i v-for](#Bruk-en-unik-id-på-nøkkel-i-v-for)
@@ -531,6 +533,123 @@ const handleUsers = (userId) => {
 ---
 
 ## Best praksis for Vue 3
+
+## Axios config i main js
+
+Vi bruker en Axios-konfigurasjon i main.js-filen i en Vue.js-applikasjon siden det er god praksis for flere grunner:
+
+**Sentralisert Axios-konfigurasjon:** Definer Axios-innstillinger ett sted, for eksempel i main.js, for konsistent bruk i hele applikasjonen, forenkler vedlikehold og øker koden sin gjenbrukbarhet.
+
+**Konsistens og Effektivitet:** Sentralisert konfigurasjon sikrer at alle Axios-forespørslene følger samme standarder og gir en mer effektiv utviklingsprosess.
+
+**Simpel Feilhåndtering:** Sentralisert konfigurasjon gjør det enkelt å endre Axios-innstillingene, for eksempel felles hodeinformasjon eller feilhåndtering, på ett sted i stedet for å gjøre det for hver enkelt Axios-forespørsel.
+Dette forenkler feilsøking og håndtering.
+
+En Axios config vil se ut som eksempelet nedenfor
+
+```js
+axios.defaults.baseURL = import.meta.env.VITE_TALE_BASE_URL;
+
+// Set the 'Content-Type' header for 'POST', 'GET', 'DELETE', and 'PUT' requests to 'application/json'.
+axios.defaults.headers.post['Content-Type'] = 'application/json';
+axios.defaults.headers.get['Content-Type'] = 'application/json';
+axios.defaults.headers.delete['Content-Type'] = 'application/json';
+axios.defaults.headers.put['Content-Type'] = 'application/json';
+axios.defaults.headers.patch['Content-Type'] = 'application/json';
+```
+
+Når en Axios config er opprettet kan alle axios kall brukes som eksempelet nedfor.
+
+```js
+axios.get('user')
+axios.post('user')
+axios.patch('user')
+axios.delete('user')
+axios.put('user')
+```
+
+Dette kommer av at vi har oppretted en baseUrl i Axios configen.
+Som er importert fra en .env file
+
+```js
+axios.defaults.baseURL = import.meta.env.VITE_TALE_BASE_URL;
+```
+
+### ✅ Bra
+```js
+
+// bra url eksempel axios.get('user')
+
+const fetchData = async () => {
+  try {
+    const response = await axios.get('user');
+    console.log(response.data);
+  } catch (error) {
+    console.error('Feil ved henting av data:', error);
+  }
+}
+```
+
+### ❌ Dårlig
+```js
+// dårlig url eksempel axios.get('https://api.example.com/user')
+
+const fetchData = async () => {
+  try {
+    const response = await axios.get('https://api.example.com/user');
+    console.log(response.data);
+  } catch (error) {
+    console.error('Feil ved henting av data:', error);
+  }
+}
+```
+
+---
+
+## Async Await med Axios i Vue 3
+
+I en Vue 3-applikasjon skal vi bruke Axios for å gjøre HTTP-forespørsler til en server.
+Når du arbeider med Axios og ønsker å utføre asynkrone oppgaver, skal det brukes **async/await med try/catch blokker** for å håndtere asynkrone operasjoner som gjør dem mer lesbare og ryddige.
+
+### ✅ Bra
+```js
+npm install axios
+import axios from 'axios';
+
+const fetchData = async () => {
+  try {
+    const response = await axios.get('user');
+    // Håndter dataen som kommer tilbake fra serveren her
+    console.log(response.data);
+  } catch (error) {
+    // Håndter feil her, for eksempel nettverksproblemer eller ugyldige svar
+    console.error('Feil ved henting av data:', error);
+  }
+}
+}
+```
+
+Vi skal ikke bruke .then pga Lesbarhet og struktur, Unngå callback hell og Enklere testing.
+
+Bedre integrasjon med moderne JavaScript: Mange moderne JavaScript-biblioteker og rammeverk, inkludert Vue 3, støtter og anbefaler bruk av async/await.
+
+### ❌ Dårlig
+```js
+function fetchData() {
+  axios
+    .get('https://api.example.com/data')
+    .then((response) => {
+      // Håndter dataen som kommer tilbake fra serveren her
+      console.log(response.data);
+    })
+    .catch((error) => {
+      // Håndter feil her, for eksempel nettverksproblemer eller ugyldige svar
+      console.error('Feil ved henting av data:', error);
+    });
+}
+```
+
+---
 
 ## v-for og v-if
 
