@@ -104,8 +104,7 @@ Om du blir usikker på hva som blir korrekt semantics i sammenheng med hva du ho
 
 ### ✅ Korrekt
 
-```
-html
+```html
 <!-- Navigasjon eksempel -->
 <nav>
   <ul>
@@ -122,7 +121,7 @@ html
 ### ❌ Ikke Korrekt
 
 ```
-tml
+html
 <!-- Navigasjon eksempel -->
 <div>
   <li>
