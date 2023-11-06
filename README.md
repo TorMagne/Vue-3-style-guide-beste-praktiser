@@ -120,8 +120,7 @@ Om du blir usikker på hva som blir korrekt semantics i sammenheng med hva du ho
 
 ### ❌ Ikke Korrekt
 
-```
-html
+```html
 <!-- Navigasjon eksempel -->
 <div>
   <li>
@@ -155,8 +154,7 @@ Er du i tvil så kan du finne mer informasjon om aria-label i linken nedenfor
 
 ### ✅ Eksempel
 
-```
-html
+```html
 <button aria-label="Close" onclick="myDialog.close()">
   <svg
     aria-hidden="true"
@@ -189,8 +187,7 @@ Max-w-prose er en klasse som gir et element en maksimal bredde som er optimalise
 
 ### ✅ Eksempel 1
 
-```
-html
+```html
 <div class="text-sm max-w-prose ...">
   <p>
     Oh yeah. It's the best part. It's crunchy, it's explosive, it's where the
@@ -246,8 +243,7 @@ Tailwind CSS er 'utility first' og derfor bruker et klasse-basert system. Det er
 
 [Les mer om extracting classes with apply](https://tailwindcss.com/docs/reusing-styles#extracting-classes-with-apply)
 
-```
-html
+```html
 <!-- her er noen eksempler på HTML elementer som har mange klasser -->
 
 <a
@@ -277,8 +273,7 @@ Med @apply kan du lage en egen klasse med alle klassene i HTML elementet slik at
 
 Dette gjøres i CSS filen hvor tailwind har blitt importert.
 
-```
-css
+```css
 <!-- Tailwind CSS fil -->
 @tailwind base;
 @tailwind components;
@@ -293,8 +288,7 @@ css
 
 Grunnen til at man skal bruke '@layer components' er at disse klassene må komme før Tailwind sine utility klasser. Hvis man ikke gjør dette, eller bruker '@apply utilities', så vil tailwind sine utility klasser overkjøre de nye klassene vi har lagd.
 
-```
-html
+```html
 <!-- eksempel på HTML etter flytting av klasser til en egen CSS klasse -->
 <a href="#" class="custom-button"> Book you escape </a>
 
@@ -317,8 +311,7 @@ Dette gjøres i `tailwind.config.js` filen.
 
 [Les mer om Tailwind CSS font family](https://tailwindcss.com/docs/font-family)
 
-```
-js
+```js
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./public/**/*.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
@@ -337,16 +330,14 @@ Grunnen til at vi gjør det på denne måten er at vi da får alle utilities fra
 
 Dette vil da gjelde alle varianter i Tailwind CSS `hover:font-sora`, `lg:font-sora"`, `md:font-sora` osv.
 
-```
-html
+```html
 <!-- eksempel -->
 <h1 class="lg:font-sora">Eksempel heading</h1>
 ```
 
 Importering av fonter vil skje på den vanlige måten med og importere de i `ìndex.html` filen i Vue
 
-```
-html
+```html
 <!-- Eksempel på importering av fonter-->
 <head>
   <meta charset="utf-8" />
@@ -380,8 +371,7 @@ Det nermeste vi kommer til `60px`i Tailwind er `64px` som vi da ville brukt klas
 
 For å bruke en verdi som ikke er standard i Tailwind, så skal man bruke en postfix med square brackets, som vist i eksempelet nedenfor.
 
-```
-html
+```html
 <nav class="h-[60px]">
   <ul>
     <li>
@@ -393,8 +383,7 @@ html
 
 Flere eksempler.
 
-```
-html
+```html
 <button class="bg-[#1da1f2]">...</button>
 <div class="ease-[cubic-bezier(0.95,0.05,0.795,0.035)]">...</div>
 <p class="underline-offset-[3px]">...</p>
@@ -411,15 +400,13 @@ Betydnings- og uttalbare variabelnavn er bra.
 
 ### ✅ Korrekt
 
-```
-js
+```js
 const currentDate = new Date();
 ```
 
 ### ❌ Ikke Korrekt
 
-```
-js
+```js
 const yyyymmd = new Date();
 ```
 
@@ -433,15 +420,13 @@ Et eksempel på dette er å bruke 3 navn for en bruker.
 
 ### ✅ Korrekt
 
-```
-js
+```js
 getUser();
 ```
 
 ### ❌ Ikke Korrekt
 
-```
-js
+```js
 getUserInfo();
 getPersonData();
 getSubscriberRecord();
@@ -459,16 +444,14 @@ Man skal heller ikke ta i bruk av magiske tall, dvs ikke nummer uten egen variab
 
 ### ✅ Korrekt
 
-```
-js
+```js
 const DAY_IN_MILLISECONDS = 86_400_000;
 setTimeout(doSomething, DAY_IN_MILLISECONDS);
 ```
 
 ### ❌ Ikke Korrekt
 
-```
-js
+```js
 setTimeout(doSomething, 86400000);
 ```
 
@@ -482,8 +465,7 @@ Man skal navngi variabler med navn som beskriver hva de inneholder for å fremme
 
 ### ✅ Eksempel
 
-```
-js
+```js
 const phone = "555-555-1212";
 const [areaCode, exchangeCode, lineNumber] = phone.split("-");
 ```
@@ -502,8 +484,7 @@ Man skal unngå å mentalt kartlegge hva hver variabel betyr.
 
 ### ✅ Korrekt
 
-```
-js
+```js
 phoneNumbers.forEach((phoneNumber) => {
   call(phoneNumber);
 });
@@ -511,8 +492,7 @@ phoneNumbers.forEach((phoneNumber) => {
 
 ### ❌ Ikke Korrekt
 
-```
-js
+```js
 items.forEach(el => {
   ...
 });
@@ -534,8 +514,7 @@ Vi trenger ikke "car" fremfor hver verdi.
 
 ### ✅ Korrekt
 
-```
-js
+```js
 const car = {
   make: "Ford",
   model: "Fiesta",
@@ -545,8 +524,7 @@ const car = {
 
 ### ❌ Ikke Korrekt
 
-```
-js
+```js
 const car = {
   carMake: "Ford",
   carModel: "Fiesta",
@@ -568,8 +546,7 @@ Hvis man ikke gjør det på denne måten så vil det være vanskelig for andre �
 
 ### ❌ Ikke Korrekt
 
-```
-js
+```js
 const add = (date, years) => {
   // ...
 };
@@ -581,8 +558,7 @@ add(date, 1);
 
 ### ✅ Korrekt
 
-```
-js
+```js
 const addYearsToDate = (date, years) => {
   // ...
 };
@@ -612,8 +588,7 @@ Bruk forklarende variabler så ofte som mulig. Et eksempel er 'forumID', eller '
 
 ### ✅ Korrekt
 
-```
-js
+```js
 const handleUsers = (userId) => {
 ...
 }
@@ -621,8 +596,7 @@ const handleUsers = (userId) => {
 
 ### ❌ Ikke Korrekt
 
-```
-js
+```js
 const handleUsers = (id) => {
 ...
 }
@@ -676,15 +650,13 @@ axios.put("user");
 
 Dette skjer pga at vi har oppretted en baseUrl i Axios configen, som da er importert fra en .env fil.
 
-```
-js
+```js
 axios.defaults.baseURL = import.meta.env.VITE_TALE_BASE_URL;
 ```
 
 ### ✅ Korrekt
 
-```
-js
+```js
 // bra url eksempel axios.get('user')
 
 const fetchData = async () => {
@@ -699,8 +671,7 @@ const fetchData = async () => {
 
 ### ❌ Ikke Korrekt
 
-```
-js
+```js
 // dårlig url eksempel axios.get('https://api.example.com/user')
 
 const fetchData = async () => {
@@ -727,8 +698,7 @@ Når man skal utføre asynkrone oppgaver i Axios, skal **async/await med try/cat
 
 ### ✅ Korrekt
 
-```
-js
+```js
 import axios from "axios";
 
 const fetchData = async () => {
@@ -753,8 +723,7 @@ For bedre integrasjon med moderne Javascript: Mange av de moderne Javascript-bib
 
 ### ❌ Ikke Korrekt
 
-```
-js
+```js
 function fetchData() {
   axios
     .get("https://api.example.com/data")
@@ -783,8 +752,7 @@ Det er alltid nødvendig å bruke Key's sammen med v-for for å kunne vedlikehol
 
 ### ❌ Ikke Korrekt
 
-```
-vue
+```vue
 <ul>
   <li v-for="todo in todos">
     {{ todo.text }}
@@ -794,8 +762,7 @@ vue
 
 ### ✅ Korrekt
 
-```
-vue
+```vue
 <ul>
   <li
     v-for="todo in todos"
@@ -818,10 +785,7 @@ En v-for-loop bruker unike id-attributter i hvert element for å kunne spore uni
 
 ### ❌ Ikke Korrekt
 
-```
-
-vue
-
+```vue
 <!-- Kan brukes hvis en unik id ikke er tilgjengelig eller for prototyping -->
 <div v-for="(task, taskIndex) in taskStore.favs" :key="taskIndex">
   <div class="card-body">
@@ -832,10 +796,7 @@ vue
 
 ### ✅ Korrekt
 
-```
-
-vue
-
+```vue
 <div v-for="task in taskStore.favs" :key="task.id">
   <div class="card-body">
     <TaskDetails :task="task" />
@@ -904,15 +865,13 @@ Komponentnavn skal alltid inneholde flere ord, med unntak av rot-App-komponenter
 
 ### ❌ Ikke korrekt
 
-```
-vue
+```vue
 <Item />
 ```
 
 ### ✅ Korrekt
 
-```
-vue
+```vue
 <TodoItem />
 ```
 
@@ -930,8 +889,7 @@ PascalCase fungerer best i samsvar med autocompletion i code-editors, ettersom a
 
 ### ❌ Ikke Korrekt
 
-```
-vue
+```vue
 <todo-item><todo-item/>
 
 <toDoItem><toDoItem/>
@@ -939,8 +897,7 @@ vue
 
 ### ✅ Korrekt
 
-```
-vue
+```vue
 <TodoItem />
 ```
 
@@ -1085,8 +1042,7 @@ Den korrekte rekkefølgen på Enkeltfilkomponenter er `<template> <script> <styl
 
 ### ❌ Ikke Korrekt
 
-```
-vue
+```vue
 <style>
 /* ... */
 </style>
@@ -1106,8 +1062,7 @@ vue
 
 ### ✅ Korrekt
 
-```
-vue
+```vue
 <template>...</template>
 <script>
 /* ... */
@@ -1131,16 +1086,14 @@ I koder som blir committed så skal prop-definisjoner være så tydelig detaljer
 
 ### ❌ Ikke korrekt
 
-```
-js
+```js
 // Dette er bare OK når man prototyper
 const props = defineProps(["status"]);
 ```
 
 ### ✅ Korrekt
 
-```
-js
+```js
 const props = defineProps({
   status: String,
   required: true,
@@ -1163,32 +1116,28 @@ Man skal følge vanlige konvensjoner i hvert språk. I JavaScript er camelCase m
 
 ### ❌ Ikke Korrekt
 
-```
-js
+```js
 <!-- Javascript -->
 props: {
   'greeting-text': String
 }
 ```
 
-```
-vue
+```vue
 <!-- template / HTML -->
 <WelcomeMessage greetingText="hi" />
 ```
 
 ### ✅ Korrekt
 
-```
-js
+```js
 <!-- Javascript -->
 props: {
   greetingText: String
 }
 ```
 
-```
-vue
+```vue
 <!-- template / HTML -->
 <WelcomeMessage greeting-text="hi" />
 ```
@@ -1214,8 +1163,7 @@ vue
 
 ### ❌ Ikke Korrekt
 
-```
-js
+```js
 import { defineStore } from "pinia";
 
 export const taskStore = defineStore("useTaskStore", {
@@ -1231,8 +1179,7 @@ export const taskStore = defineStore("TaskStore", {
 
 ### ✅ Korrekt
 
-```
-js
+```js
 import { defineStore } from "pinia";
 
 export const useTaskStore = defineStore("taskStore", {
@@ -1275,8 +1222,7 @@ stores/
 
 ### Eksempel på importering av Pinia Store
 
-```
-vue
+```vue
 <script setup>
 import { useTaskStore } from "../stores/TaskStore";
 
@@ -1290,8 +1236,7 @@ const taskStore = useTaskStore();
 
 ### Vanlig eksempel på en Pinia Store
 
-```
-js
+```js
 import { defineStore } from "pinia";
 
 export const useTaskStore = defineStore("taskStore", {
