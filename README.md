@@ -175,8 +175,6 @@ Er du i tvil så kan du finne mer informasjon om aria-label i linken nedenfor
 
 ## max width for paragrafer
 
-<!-- Paragrafer skal ha en max-width. Dette skal vi gjøre sånn at tekst på nettsider blir lettere å lese. -->
-
 Alle paragrafer skal ha en max-width. Dette er for at nettsidene skal ha god leservennlighet.
 
 Hvis ikke så vil paragrafene strekke seg over hele skjermen, noe som da vil gjøre brukeropplevelsen mye dårligere.
@@ -231,11 +229,7 @@ I bildet nedenfor vil du kunne se den korrekte utvidelsen, og hvordan du install
 
 ## Tailwind apply
 
-<!-- Tailwind CSS er utiliti først og bruker et klasse basert system. Derfor kan det ofte bli veldig mye klasser på HTML elementer. -->
-
 Tailwind CSS er 'utility first' og derfor bruker et klasse-basert system. Det er derfor det kan bli store mengder med klasser i et HTML element.
-
-<!-- :bangbang: Anbefaler på det sterkeste å se den youtube videoen i linken nedenfor. Får en bedre forståelse av @apply og hvordan du får mest ut av Tailwind CSS :bangbang: -->
 
 :bangbang: Det anbefales å se videoen som er lenket til nedenfor. Du vil få en bedre forståelse av @apply, og hvordan du får mest mulig ut av å bruke Tailwind CSS :bangbang:
 
@@ -261,15 +255,9 @@ Tailwind CSS er 'utility first' og derfor bruker et klasse-basert system. Det er
 </a>
 ```
 
-<!-- Hvis du finner deg selv i en lignende situasjon som det eksempelet ovenfår kan du bruke @apply. -->
-
 Om du befinner deg i en situasjon hvor du har gjort lignende som eksemplet ovenfor, så kan du bruke @apply.
 
-<!-- Med @apply kan du ta alle klassene fra en HTML element og lage en ny tilpassede klasse med de valgte klassene. -->
-
 Med @apply kan du lage en egen klasse med alle klassene i HTML elementet slik at du slipper å skrive alle inn i hvert element.
-
-<!-- Dette vil da skje i den CSS filen der tailwind er importert. -->
 
 Dette gjøres i CSS filen hvor tailwind har blitt importert.
 
@@ -359,15 +347,9 @@ Importering av fonter vil skje på den vanlige måten med og importere de i `ìn
 
 ## one-off custom value i Tailwind
 
-<!-- Hvis mann har bruk for eks en height verdi på `60px` som ikke eksisterer i Tailwdind så kan mann bruke en one-off custom value. -->
-
 Hvis man skal bruke feks en height verdi på '60px' som ikke vanligvis er tilgjengelig i Tailwind, så kan man bruke en one-off custom value.
 
-<!-- Det nermeste vi kommer til `60px`i Tailwind er `64px` som vi da ville brukt klassen `h-16` til. -->
-
 Det nermeste vi kommer til `60px`i Tailwind er `64px` som vi da ville brukt klassen `h-16` til.
-
-<!-- For og bruke en vilkårlige verdi vil vi da bruke en postfix med square brackets som vist i eksempelet nedenfor. -->
 
 For å bruke en verdi som ikke er standard i Tailwind, så skal man bruke en postfix med square brackets, som vist i eksempelet nedenfor.
 
@@ -459,8 +441,6 @@ setTimeout(doSomething, 86400000);
 
 ## Bruk forklarende variabler
 
-<!-- Vi skal lage variabel navn som forklarer hva de inneholder. -->
-
 Man skal navngi variabler med navn som beskriver hva de inneholder for å fremme god oversiktelighet.
 
 ### ✅ Eksempel
@@ -470,15 +450,11 @@ const phone = "555-555-1212";
 const [areaCode, exchangeCode, lineNumber] = phone.split("-");
 ```
 
-<!-- Nå vet vi at et telefonnummer kan deles inn i disse numrene. -->
-
 Her ser vi det tydelig at det er et telefonnummer det er snakk om i variablen.
 
 ---
 
 ## Ingen mental kartlegging
-
-<!-- Vi skal unngå behovet for å kartlegge betydningen av variabelen med tankene våre. -->
 
 Man skal unngå å mentalt kartlegge hva hver variabel betyr.
 
